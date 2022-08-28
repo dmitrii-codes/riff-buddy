@@ -33,8 +33,9 @@ const config: Configuration = {
     },
     output: {
         path: path.resolve(__dirname, "static"),
-        filename: "static/[name].js",
-        chunkFilename: "static/[id].[chunkhash].js",
+        publicPath: "static",
+        filename: "[name].js",
+        chunkFilename: "[id].[chunkhash].js",
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
