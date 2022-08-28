@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "./static/",
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "Node",
+        "esModuleInterop": true
+    },
+    "ts-node": {
+        "esm": true
+    }
+}
