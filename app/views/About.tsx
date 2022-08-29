@@ -2,7 +2,6 @@ import React from "react";
 import NavigationBar from "../components/NavigationBar";
 import { NavBarPage } from "../components/NavigationBar";
 import Footer from "../components/Footer";
-// import photo from ""
 
 const About = () => {
     return (
@@ -33,8 +32,8 @@ const About = () => {
                     <div className="row py-2">
                         <div className="col-auto">
                             <img
-                                className="headshot"
-                                // src={photo}
+                                className="photo"
+                                src={require("../assets/photo.jpg")}
                                 alt="Dmitrii Vasilev"
                             />
                         </div>
