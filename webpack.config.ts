@@ -5,21 +5,29 @@ import { Configuration } from "webpack";
 const config: Configuration = {
     mode: "production",
     entry: "./app/index.tsx",
+    watchOptions: {
+        poll: true,
+        ignored: /node_modules/,
+    },
     module: {
         rules: [
             {
-                test: /\.(ts|js)x?$/,
-                exclude: /node_modules/,
+                test: /\.(jpg|png|svg|gif)$/,
+                type: "asset/resource",
             },
             {
                 test: /\.tsx?$/,
                 use: "ts-loader",
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
         ],
     },
     optimization: {
-        moduleIds: "deterministic",
+        usedExports: true,
         minimize: true,
         splitChunks: {
             cacheGroups: {
@@ -32,8 +40,8 @@ const config: Configuration = {
         },
     },
     output: {
-        path: path.resolve(__dirname, "static"),
-        publicPath: "static",
+        path: path.resolve(__dirname, "static/"),
+        publicPath: "static/",
         filename: "[name].js",
         chunkFilename: "[id].[chunkhash].js",
     },

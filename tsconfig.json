@@ -12,5 +12,7 @@
     },
     "ts-node": {
         "esm": true
-    }
+    },
+    "include": ["app"],
+    "exclude": ["node_modules"]
 }

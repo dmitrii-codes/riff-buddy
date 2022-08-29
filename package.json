@@ -1,27 +1,31 @@
 {
     "name": "riff-buddy",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "description": "CM3070 Project",
     "scripts": {
         "build": "webpack",
-        "watch": "webpack watch"
+        "watch": "webpack --watch"
     },
     "author": "Dmitrii Vasilev",
     "license": "ISC",
     "devDependencies": {
+        "@fluentui/react": "^8.92.1",
         "@types/node": "^18.7.13",
-        "@types/react": "^18.0.17",
-        "@types/react-dom": "^18.0.6",
+        "@types/react": "^17.0.2",
+        "@types/react-dom": "^17.0.2",
+        "css-loader": "^6.7.1",
+        "file-loader": "^6.2.0",
         "html-webpack-plugin": "^5.5.0",
+        "style-loader": "^3.3.1",
         "ts-loader": "^9.3.1",
         "ts-node": "^10.9.1",
         "typescript": "^4.8.2",
-        "webpack": "^5.74.0",
         "webpack-cli": "^4.10.0"
     },
     "dependencies": {
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
+        "axios": "^0.27.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
         "react-router-dom": "^6.3.0"
     }
 }

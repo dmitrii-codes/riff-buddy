@@ -1,6 +1,6 @@
 from riff_buddy import app
 
-app.route('/generate', methods=['POST'])
+@app.route('/generate', methods=['GET'])
 def generate():
     return 'generated', 200
 
