@@ -2,24 +2,61 @@ import axios from "axios";
 import React, { useState } from "react";
 import Footer from "../components/Footer";
 import NavigationBar, { NavBarPage } from "../components/NavigationBar";
+import { MIDIFile, startLoad, startPlay } from "../midi.js";
 
 const Home = () => {
-    const [file, setFile] = useState<File>();
+    const [inputFile, setInputFile] = useState<File>();
     const [model, setModel] = useState<"riffBuddy" | "magenta">();
     const [results, setResults] = useState<File[]>([]);
 
     const submitFile = () => {
         const formData = new FormData();
-        formData.append("midi", file);
+        formData.append("midi", inputFile);
         const config = {
             headers: {
                 "content-type": "multipart/form-data",
             },
         };
         axios.post("/generate", formData, config).then((response) => {
+            // TODO:
+            // setResults();
             console.log(response.data);
         });
     };
+
+    const downloadFile = (file: File) => {
+        // TODO: download file
+        return;
+    };
+
+    // #region midi player related
+    let audioStopped = true;
+    const handleStop = () => (audioStopped = true);
+    const handlePlay = (file: File) => {
+        if (!audioStopped) {
+            audioStopped = true;
+            // 1 sec timeout for other midi to stop
+            setTimeout(() => {
+                audioStopped = false;
+                loadAndPlay(file);
+            }, 1000);
+        } else {
+            audioStopped = false;
+            loadAndPlay(file);
+        }
+    };
+    const loadAndPlay = (file: File) => {
+        const fileReader = new FileReader();
+        fileReader.onload = function (progressEvent) {
+            const arrayBuffer = progressEvent.target.result;
+            const midiFile = new MIDIFile(arrayBuffer);
+            startLoad(midiFile.parseSong(), (song: any) => {
+                startPlay(song, () => audioStopped);
+            });
+        };
+        fileReader.readAsArrayBuffer(file);
+    };
+    // #endregion
 
     return (
         <>
@@ -71,26 +108,35 @@ const Home = () => {
                                 className="btn btn-dark"
                                 type="file"
                                 onChange={(event) => {
+                                    audioStopped = true;
                                     const file = event.target.files[0];
-                                    setFile(file);
-                                    file &&
-                                        setResults([
-                                            file,
-                                            file,
-                                            file,
-                                            file,
-                                            file,
-                                        ]);
-                                    console.log(file);
+                                    setInputFile(file);
                                 }}
                             />
                         </div>
-
+                        {inputFile && (
+                            <div className="align-center">
+                                <span
+                                    className="bi bi-stop-btn btn btn-danger"
+                                    style={{
+                                        fontSize: 20,
+                                    }}
+                                    onClick={() => handleStop()}
+                                />
+                                <span
+                                    className="bi bi-play-btn btn btn-success"
+                                    style={{
+                                        fontSize: 20,
+                                    }}
+                                    onClick={() => handlePlay(inputFile)}
+                                />
+                            </div>
+                        )}
                         <div className="align-center">
                             <button
                                 className="btn btn-primary"
                                 onClick={submitFile}
-                                disabled={!file || !model}
+                                disabled={!inputFile || !model}
                             >
                                 Generate
                             </button>
@@ -101,30 +147,34 @@ const Home = () => {
                             className="col-4"
                             style={{ maxWidth: "100%", marginBottom: "50px" }}
                         >
-                            {results.map((result) => {
+                            {results.map((resultFile) => {
                                 return (
                                     <div className="align-center">
-                                        <b>{result.name}</b>...
+                                        <b>{resultFile.name}</b>...
                                         <span
-                                            className="bi bi-pause-btn btn btn-danger"
+                                            className="bi bi-stop-btn btn btn-danger"
                                             style={{
                                                 fontSize: 20,
                                             }}
-                                            onClick={() => console.log("pause")}
+                                            onClick={handleStop}
                                         />
                                         <span
                                             className="bi bi-play-btn btn btn-success"
                                             style={{
                                                 fontSize: 20,
                                             }}
-                                            onClick={() => console.log("play")}
+                                            onClick={() =>
+                                                handlePlay(resultFile)
+                                            }
                                         />
                                         <span
                                             className="bi bi-download btn btn-secondary"
                                             style={{
                                                 fontSize: 20,
                                             }}
-                                            onClick={() => console.log("play")}
+                                            onClick={() =>
+                                                downloadFile(resultFile)
+                                            }
                                         />
                                     </div>
                                 );
