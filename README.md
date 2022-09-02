@@ -11,3 +11,8 @@ flask run
 npm run build
 npm run watch
 ```
+
+TODOs:
+
+-   don't forget to update checkpoint path on cloud server
+-   add message about how many notes are required

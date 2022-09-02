@@ -3,58 +3,77 @@ import React, { useState } from "react";
 import Footer from "../components/Footer";
 import NavigationBar, { NavBarPage } from "../components/NavigationBar";
 import { MIDIFile, startLoad, startPlay } from "../midi.js";
+import { b64toBlob } from "../utils";
 
 const Home = () => {
     const [inputFile, setInputFile] = useState<File>();
-    const [model, setModel] = useState<"riffBuddy" | "magenta">();
-    const [results, setResults] = useState<File[]>([]);
+    const [model, setModel] = useState<"riffBuddy" | "magenta">("magenta");
+    const [results, setResults] = useState<Blob[]>([]);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isPlayLoading, setIsPlayLoading] = useState(-1);
+    const [isPlaying, setIsPlaying] = useState(false);
+    // mutable value for a callback
+    const playingState = React.useRef<boolean>();
+    playingState.current = isPlaying;
 
     const submitFile = () => {
         const formData = new FormData();
         formData.append("midi", inputFile);
+        formData.set("model", model);
         const config = {
             headers: {
                 "content-type": "multipart/form-data",
             },
         };
-        axios.post("/generate", formData, config).then((response) => {
-            // TODO:
-            // setResults();
-            console.log(response.data);
-        });
+
+        setIsSubmitting(true);
+        setResults([]);
+        axios
+            .post<Array<string>>("/generate", formData, config)
+            .then((response) => {
+                const data = response.data;
+                setResults(
+                    data.map((bytes) => {
+                        return b64toBlob(bytes, "audio/mid");
+                    })
+                );
+            })
+            .catch((error) => alert(String(error)))
+            .finally(() => setIsSubmitting(false));
     };
 
-    const downloadFile = (file: File) => {
-        // TODO: download file
-        return;
+    const downloadFile = (blob: Blob) => {
+        (window.location as any) = URL.createObjectURL(blob);
     };
 
     // #region midi player related
-    let audioStopped = true;
-    const handleStop = () => (audioStopped = true);
-    const handlePlay = (file: File) => {
-        if (!audioStopped) {
-            audioStopped = true;
-            // 1 sec timeout for other midi to stop
+    const handleStop = () => setIsPlaying(false);
+    const handlePlay = (file: Blob, index = 0) => {
+        const isStopped = () => !playingState.current;
+        const loadAndPlay = (file: Blob) => {
+            const fileReader = new FileReader();
+            fileReader.onload = function (progressEvent) {
+                const arrayBuffer = progressEvent.target.result;
+                const midiFile = new MIDIFile(arrayBuffer);
+                startLoad(midiFile.parseSong(), (song: any) => {
+                    setIsPlayLoading(-1);
+                    setIsPlaying(true);
+                    startPlay(song, isStopped);
+                });
+            };
+            fileReader.readAsArrayBuffer(file);
+        };
+
+        setIsPlayLoading(index);
+        if (playingState.current) {
+            setIsPlaying(false);
+            // wait for a playing midi to stop
             setTimeout(() => {
-                audioStopped = false;
                 loadAndPlay(file);
             }, 1000);
         } else {
-            audioStopped = false;
             loadAndPlay(file);
         }
-    };
-    const loadAndPlay = (file: File) => {
-        const fileReader = new FileReader();
-        fileReader.onload = function (progressEvent) {
-            const arrayBuffer = progressEvent.target.result;
-            const midiFile = new MIDIFile(arrayBuffer);
-            startLoad(midiFile.parseSong(), (song: any) => {
-                startPlay(song, () => audioStopped);
-            });
-        };
-        fileReader.readAsArrayBuffer(file);
     };
     // #endregion
 
@@ -90,16 +109,16 @@ const Home = () => {
                                 <button
                                     className="dropdown-item"
                                     type="button"
-                                    onClick={() => setModel("riffBuddy")}
+                                    onClick={() => setModel("magenta")}
                                 >
-                                    RiffBuddy RNN
+                                    Magenta RNN
                                 </button>
                                 <button
                                     className="dropdown-item"
                                     type="button"
-                                    onClick={() => setModel("magenta")}
+                                    onClick={() => setModel("riffBuddy")}
                                 >
-                                    Magenta RNN
+                                    RiffBuddy RNN
                                 </button>
                             </div>
                         </div>
@@ -108,7 +127,7 @@ const Home = () => {
                                 className="btn btn-dark"
                                 type="file"
                                 onChange={(event) => {
-                                    audioStopped = true;
+                                    setIsPlaying(false);
                                     const file = event.target.files[0];
                                     setInputFile(file);
                                 }}
@@ -116,19 +135,22 @@ const Home = () => {
                         </div>
                         {inputFile && (
                             <div className="align-center">
-                                <span
+                                <button
                                     className="bi bi-stop-btn btn btn-danger"
                                     style={{
                                         fontSize: 20,
                                     }}
                                     onClick={() => handleStop()}
                                 />
-                                <span
-                                    className="bi bi-play-btn btn btn-success"
+                                <button
+                                    className={`bi bi-play-btn${
+                                        isPlayLoading === 0 ? "-fill" : ""
+                                    } btn btn-success`}
                                     style={{
                                         fontSize: 20,
                                     }}
                                     onClick={() => handlePlay(inputFile)}
+                                    disabled={isPlayLoading === 0}
                                 />
                             </div>
                         )}
@@ -136,21 +158,40 @@ const Home = () => {
                             <button
                                 className="btn btn-primary"
                                 onClick={submitFile}
-                                disabled={!inputFile || !model}
+                                disabled={!inputFile || !model || isSubmitting}
                             >
-                                Generate
+                                {isSubmitting ? (
+                                    <div className="spinner-grow" role="status">
+                                        <span className="sr-only">
+                                            Loading...
+                                        </span>
+                                    </div>
+                                ) : (
+                                    "Generate"
+                                )}
                             </button>
                         </div>
+
+                        {isSubmitting && (
+                            <div className="align-center">
+                                <span>
+                                    Generating melodies. Might take a few
+                                    seconds.
+                                </span>
+                            </div>
+                        )}
                     </div>
                     {results.length > 0 && (
                         <div
                             className="col-4"
                             style={{ maxWidth: "100%", marginBottom: "50px" }}
                         >
-                            {results.map((resultFile) => {
+                            {results.map((resultBlob, index) => {
                                 return (
                                     <div className="align-center">
-                                        <b>{resultFile.name}</b>...
+                                        <b
+                                            style={{ marginRight: "10px" }}
+                                        >{`Generated_Riff_${index + 1}.mid`}</b>
                                         <span
                                             className="bi bi-stop-btn btn btn-danger"
                                             style={{
@@ -164,7 +205,10 @@ const Home = () => {
                                                 fontSize: 20,
                                             }}
                                             onClick={() =>
-                                                handlePlay(resultFile)
+                                                handlePlay(
+                                                    resultBlob,
+                                                    index + 1
+                                                )
                                             }
                                         />
                                         <span
@@ -173,7 +217,7 @@ const Home = () => {
                                                 fontSize: 20,
                                             }}
                                             onClick={() =>
-                                                downloadFile(resultFile)
+                                                downloadFile(resultBlob)
                                             }
                                         />
                                     </div>

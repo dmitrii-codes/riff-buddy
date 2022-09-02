@@ -18,15 +18,14 @@ const About = () => {
                 <p className="lead">
                     This Web Application and generative models were designed and
                     built as part of the final project of the CM3070 module.
-                    University of London, BSc in Computer Science program.
                 </p>
             </div>
 
             <div className="content">
                 <h1 className="display-4">Who designed Riff Buddy?</h1>
                 <p className="lead">
-                    I am a BSc Computer Science student, a full-time software
-                    engineer @AWS, and a father.
+                    I am a BSc Computer Science student, and a full-time
+                    software engineer @AWS.
                 </p>
                 <div className="container-fluid">
                     <div className="row py-2">
