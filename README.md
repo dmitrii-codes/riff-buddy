@@ -1,18 +1,12 @@
-### To run flask:
+### To run flask server:
 
 ```
-cd D:/IT/UoL/finalProject/web/src/riff_buddy
-flask run
+flask run # (-h "0.0.0.0", if prod)
 ```
 
-### To run webpack (build/watch):
+### To generate views with webpack:
 
 ```
 npm run build
 npm run watch
 ```
-
-TODOs:
-
--   don't forget to update checkpoint path on cloud server
--   add message about how many notes are required

@@ -105,9 +105,9 @@ network = tf.keras.models.load_model(
 
 def generate(primer_midi, melodies_generate=4):
     # set parameters
-    temperature = 1
-    sequence_length = 100
-    num_predictions = 200
+    temperature = 3.35
+    sequence_length = 32
+    num_predictions = 150
     instrument_name = 'Distortion Guitar'
     key_order = ['pitch', 'step', 'duration']
 

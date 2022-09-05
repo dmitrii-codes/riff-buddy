@@ -12,6 +12,7 @@ const Home = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isPlayLoading, setIsPlayLoading] = useState(-1);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
     // mutable value for a callback
     const playingState = React.useRef<boolean>();
     playingState.current = isPlaying;
@@ -27,6 +28,7 @@ const Home = () => {
         };
 
         setIsSubmitting(true);
+        setErrorMessage("");
         setResults([]);
         axios
             .post<Array<string>>("/generate", formData, config)
@@ -38,7 +40,7 @@ const Home = () => {
                     })
                 );
             })
-            .catch((error) => alert(String(error)))
+            .catch((error) => setErrorMessage(String(error)))
             .finally(() => setIsSubmitting(false));
     };
 
@@ -171,12 +173,18 @@ const Home = () => {
                                 )}
                             </button>
                         </div>
-
                         {isSubmitting && (
                             <div className="align-center">
                                 <span>
                                     Generating melodies. Might take a few
                                     seconds.
+                                </span>
+                            </div>
+                        )}
+                        {errorMessage && (
+                            <div className="align-center">
+                                <span className="text-danger">
+                                    {errorMessage}
                                 </span>
                             </div>
                         )}

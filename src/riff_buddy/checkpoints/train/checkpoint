@@ -1,2 +1,3 @@
-model_checkpoint_path: "D:/IT/UoL/finalProject/web/src/riff_buddy/checkpoints/train/model.ckpt-15203"
-all_model_checkpoint_paths: "D:/IT/UoL/finalProject/web/src/riff_buddy/checkpoints/train/model.ckpt-15203"
+model_checkpoint_path: "D:/IT/UoL/finalProject/web/src/riff_buddy/checkpoints/train/model.ckpt-1386"
+all_model_checkpoint_paths: "D:/IT/UoL/finalProject/web/src/riff_buddy/checkpoints/train/model.ckpt-1343"
+all_model_checkpoint_paths: "D:/IT/UoL/finalProject/web/src/riff_buddy/checkpoints/train/model.ckpt-1386"
