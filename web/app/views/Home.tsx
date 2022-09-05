@@ -124,6 +124,14 @@ const Home = () => {
                                 </button>
                             </div>
                         </div>
+                        {model == "riffBuddy" && (
+                            <div className="align-center">
+                                <span className="text-dark">
+                                    Please make sure your MIDI has at least 32
+                                    notes.
+                                </span>
+                            </div>
+                        )}
                         <div className="align-center">
                             <input
                                 className="btn btn-dark"
@@ -175,9 +183,8 @@ const Home = () => {
                         </div>
                         {isSubmitting && (
                             <div className="align-center">
-                                <span>
-                                    Generating melodies. Might take a few
-                                    seconds.
+                                <span className="text-primary">
+                                    Generating melodies. Might take a minute.
                                 </span>
                             </div>
                         )}

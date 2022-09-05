@@ -11,7 +11,7 @@ body::after {
     background-size: cover;
     height: 100vh;
     content: "";
-    opacity: 0.5;
+    opacity: 0.4;
     top: 0;
     left: 0;
     bottom: 0;
