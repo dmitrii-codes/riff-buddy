@@ -7,7 +7,7 @@
         "watch": "webpack --watch"
     },
     "author": "Dmitrii Vasilev",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "@fluentui/react": "^8.92.1",
         "@types/node": "^18.7.13",

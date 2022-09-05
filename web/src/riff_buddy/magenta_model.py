@@ -34,7 +34,6 @@ def generate(midi, num_outputs=4):
 
 	return results
 
-
 def add_distortion(midi_file):
 	instrument_name = 'Distortion Guitar'
 	pm = pretty_midi.PrettyMIDI(midi_file)

@@ -49,13 +49,13 @@ Epoch 277/1000
 3956/3956 [==============================] - 57s 8ms/step - loss: 0.0087 - duration_loss: 0.0070 - pitch_loss: 0.0332 - step_loss: 0.0035
 
 
---- Starting trial: run-8 (with l2 kernel regularizer) ---- 
+--- Starting trial: run-8 (with l2 kernel regularizer) ----
 {'num_units': 512, 'learning_rate': 0.0005, 'sequence_length': 64}
 Epoch 234/1000
 3956/3956 [==============================] - 58s 15ms/step - loss: 0.0227 - duration_loss: 0.0103 - pitch_loss: 0.1375 - step_loss: 0.0058
 
 
---- Starting trial: run-9 (with l2 kernel regularizer) ---- 
+--- Starting trial: run-9 (with l2 kernel regularizer) ----
 {'num_units': 512, 'learning_rate': 0.001, 'sequence_length': 64}
 Epoch 112/1000
 3956/3956 [==============================] - 58s 15ms/step - loss: 0.0490 - duration_loss: 0.0180 - pitch_loss: 0.4837 - step_loss: 0.0091
