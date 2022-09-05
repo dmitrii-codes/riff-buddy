@@ -1,0 +1,3 @@
+model_checkpoint_path: "/content/checkpoints_v2/train/model.ckpt-1386"
+all_model_checkpoint_paths: "/content/checkpoints_v2/train/model.ckpt-1343"
+all_model_checkpoint_paths: "/content/checkpoints_v2/train/model.ckpt-1386"

@@ -1,0 +1,62 @@
+--- Starting trial: run-0 ----
+{'num_units': 256, 'learning_rate': 0.0005, 'sequence_length': 16}
+Epoch 778/1000
+4068/4068 [==============================] - 17s 4ms/step - loss: 0.0178 - duration_loss: 0.0120 - pitch_loss: 0.1267 - step_loss: 0.0054
+
+
+--- Starting trial: run-1 ----
+# SELECTED MODEL
+temperature = 3.35
+num_predictions = 150
+{'num_units': 256, 'learning_rate': 0.0005, 'sequence_length': 32}
+Epoch 549/1000
+4031/4031 [==============================] - 22s 5ms/step - loss: 0.0164 - duration_loss: 0.0110 - pitch_loss: 0.1130 - step_loss: 0.0052
+
+
+--- Starting trial: run-2 ----
+{'num_units': 256, 'learning_rate': 0.001, 'sequence_length': 16}
+Epoch 680/1000
+4068/4068 [==============================] - 17s 4ms/step - loss: 0.0164 - duration_loss: 0.0112 - pitch_loss: 0.1159 - step_loss: 0.0050
+
+
+--- Starting trial: run-3 ----
+{'num_units': 256, 'learning_rate': 0.001, 'sequence_length': 32}
+Epoch 520/1000
+4031/4031 [==============================] - 22s 5ms/step - loss: 0.0131 - duration_loss: 0.0101 - pitch_loss: 0.0705 - step_loss: 0.0045
+
+
+--- Starting trial: run-4 ----
+{'num_units': 256, 'learning_rate': 0.0005, 'sequence_length': 64}
+Epoch 394/1000
+3956/3956 [==============================] - 32s 8ms/step - loss: 0.0144 - duration_loss: 0.0100 - pitch_loss: 0.0885 - step_loss: 0.0050
+
+
+--- Starting trial: run-5 ----
+{'num_units': 256, 'learning_rate': 0.001, 'sequence_length': 64}
+Epoch 189/1000
+3956/3956 [==============================] - 32s 8ms/step - loss: 0.0208 - duration_loss: 0.0121 - pitch_loss: 0.1754 - step_loss: 0.0060
+
+
+--- Starting trial: run-6 ----
+{'num_units': 512, 'learning_rate': 0.0005, 'sequence_length': 32}
+Epoch 441/1000
+3956/3956 [==============================] - 57s 8ms/step - loss: 0.0097 - duration_loss: 0.0079 - pitch_loss: 0.0456 - step_loss: 0.0035
+
+
+--- Starting trial: run-7 ----
+{'num_units': 512, 'learning_rate': 0.0005, 'sequence_length': 64}
+Epoch 277/1000
+3956/3956 [==============================] - 57s 8ms/step - loss: 0.0087 - duration_loss: 0.0070 - pitch_loss: 0.0332 - step_loss: 0.0035
+
+
+--- Starting trial: run-8 (with l2 kernel regularizer) ---- 
+{'num_units': 512, 'learning_rate': 0.0005, 'sequence_length': 64}
+Epoch 234/1000
+3956/3956 [==============================] - 58s 15ms/step - loss: 0.0227 - duration_loss: 0.0103 - pitch_loss: 0.1375 - step_loss: 0.0058
+
+
+--- Starting trial: run-9 (with l2 kernel regularizer) ---- 
+{'num_units': 512, 'learning_rate': 0.001, 'sequence_length': 64}
+Epoch 112/1000
+3956/3956 [==============================] - 58s 15ms/step - loss: 0.0490 - duration_loss: 0.0180 - pitch_loss: 0.4837 - step_loss: 0.0091
+Epoch 113/1000

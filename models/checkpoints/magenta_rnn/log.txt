@@ -1,0 +1,1406 @@
+/usr/local/lib/python3.7/dist-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/usr/local/lib/python3.7/dist-packages/librosa/util/decorators.py:9: NumbaDeprecationWarning: An import was requested from a module that has moved location.
+Import of 'jit' requested from: 'numba.decorators', please update to use 'numba.core.decorators' or pin to Numba version 0.48.0. This alias will not be present in Numba version 0.50.0.
+  from numba.decorators import jit as optional_jit
+/usr/local/lib/python3.7/dist-packages/resampy/interpn.py:114: NumbaWarning: The TBB threading layer requires TBB version 2019.5 or later i.e., TBB_INTERFACE_VERSION >= 11005. Found TBB_INTERFACE_VERSION = 9107. The TBB threading layer is disabled.
+  _resample_loop_p(x, t_out, interp_win, interp_delta, num_table, scale, y)
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/compat/v2_compat.py:107: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+INFO:tensorflow:hparams = {'batch_size': 128, 'rnn_layer_sizes': [256, 256], 'dropout_keep_prob': 0.5, 'attn_length': 40, 'clip_norm': 3, 'learning_rate': 0.001, 'residual_connections': False, 'use_cudnn': False}
+I0904 19:38:18.107439 139650650019712 events_rnn_graph.py:96] hparams = {'batch_size': 128, 'rnn_layer_sizes': [256, 256], 'dropout_keep_prob': 0.5, 'attn_length': 40, 'clip_norm': 3, 'learning_rate': 0.001, 'residual_connections': False, 'use_cudnn': False}
+INFO:tensorflow:Train dir: /content/checkpoints_v2/train
+I0904 19:38:18.107843 139650650019712 melody_rnn_train.py:87] Train dir: /content/checkpoints_v2/train
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:66: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0904 19:38:18.108776 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:66: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:272: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+W0904 19:38:18.116935 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:272: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:184: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+W0904 19:38:18.117761 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:184: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:193: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0904 19:38:18.119485 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:193: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:193: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0904 19:38:18.120545 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/input.py:193: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:67: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+W0904 19:38:18.124437 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:67: TFRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.TFRecordDataset`.
+INFO:tensorflow:Counting records in /content/seq_examples/training_melodies.tfrecord.
+I0904 19:38:18.132918 139650650019712 sequence_example_lib.py:121] Counting records in /content/seq_examples/training_melodies.tfrecord.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:122: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+W0904 19:38:18.133077 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:122: tf_record_iterator (from tensorflow.python.lib.io.tf_record) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use eager execution and: 
+`tf.data.TFRecordDataset(path)`
+INFO:tensorflow:Total records: 50
+I0904 19:38:18.143991 139650650019712 sequence_example_lib.py:127] Total records: 50
+INFO:tensorflow:[<tf.Tensor 'random_shuffle_queue_Dequeue:0' shape=(?, 74) dtype=float32>, <tf.Tensor 'random_shuffle_queue_Dequeue:1' shape=(?,) dtype=int64>, <tf.Tensor 'random_shuffle_queue_Dequeue:2' shape=() dtype=int32>]
+I0904 19:38:18.147280 139650650019712 sequence_example_lib.py:99] [<tf.Tensor 'random_shuffle_queue_Dequeue:0' shape=(?, 74) dtype=float32>, <tf.Tensor 'random_shuffle_queue_Dequeue:1' shape=(?,) dtype=int64>, <tf.Tensor 'random_shuffle_queue_Dequeue:2' shape=() dtype=int32>]
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:106: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+W0904 19:38:18.147537 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/magenta/common/sequence_example_lib.py:106: batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.batch(batch_size)` (or `padded_batch(...)` if `dynamic_pad=True`).
+/usr/local/lib/python3.7/dist-packages/magenta/models/shared/events_rnn_graph.py:50: UserWarning: `tf.nn.rnn_cell.BasicLSTMCell` is deprecated and will be removed in a future version. This class is equivalent as `tf.keras.layers.LSTMCell`, and will be replaced by that in Tensorflow 2.0.
+  cell = base_cell(rnn_layer_sizes[i])
+WARNING:tensorflow:`tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+W0904 19:38:18.171572 139650650019712 legacy_cells.py:1109] `tf.nn.rnn_cell.MultiRNNCell` is deprecated. This class is equivalent as `tf.keras.layers.StackedRNNCells`, and will be replaced by that in Tensorflow 2.0.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/magenta/models/shared/events_rnn_graph.py:139: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+W0904 19:38:18.195857 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/magenta/models/shared/events_rnn_graph.py:139: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/magenta/contrib/rnn.py:133: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0904 19:38:18.717168 139650650019712 deprecation.py:560] From /usr/local/lib/python3.7/dist-packages/magenta/contrib/rnn.py:133: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/keras/layers/rnn/legacy_cells.py:726: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0904 19:38:18.813008 139650650019712 deprecation.py:560] From /usr/local/lib/python3.7/dist-packages/keras/layers/rnn/legacy_cells.py:726: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+/usr/local/lib/python3.7/dist-packages/tensorflow/python/keras/engine/base_layer_v1.py:1694: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  warnings.warn('`layer.apply` is deprecated and '
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/util/dispatch.py:1082: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0904 19:38:19.153066 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/util/dispatch.py:1082: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/magenta/models/shared/events_rnn_graph.py:186: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+W0904 19:38:19.156724 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/magenta/models/shared/events_rnn_graph.py:186: py_func (from tensorflow.python.ops.script_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+tf.py_func is deprecated in TF V2. Instead, there are two
+    options available in V2.
+    - tf.py_function takes a python function which manipulates tf eager
+    tensors instead of numpy arrays. It's easy to convert a tf eager tensor to
+    an ndarray (just call tensor.numpy()) but having access to eager tensors
+    means `tf.py_function`s can use accelerators such as GPUs as well as
+    being differentiable using a gradient tape.
+    - tf.numpy_function maintains the semantics of the deprecated tf.py_func
+    (it is not differentiable, and manipulates numpy arrays). It drops the
+    stateful argument making all functions stateful.
+    
+INFO:tensorflow:Starting training loop...
+I0904 19:38:20.093047 139650650019712 events_rnn_train.py:103] Starting training loop...
+INFO:tensorflow:Create CheckpointSaverHook.
+I0904 19:38:20.093279 139650650019712 basic_session_run_hooks.py:558] Create CheckpointSaverHook.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/training_util.py:397: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0904 19:38:20.217200 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/training_util.py:397: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+INFO:tensorflow:Graph was finalized.
+I0904 19:38:20.320780 139650650019712 monitored_session.py:243] Graph was finalized.
+2022-09-04 19:38:21.051683: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+INFO:tensorflow:Running local_init_op.
+I0904 19:38:21.173106 139650650019712 session_manager.py:527] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0904 19:38:21.179342 139650650019712 session_manager.py:530] Done running local_init_op.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/monitored_session.py:914: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+W0904 19:38:21.209661 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/monitored_session.py:914: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 0...
+I0904 19:38:21.890010 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 0...
+INFO:tensorflow:Saving checkpoints for 0 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:38:21.890440 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 0 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-0.data-00000-of-00001
+I0904 19:38:22.050899 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-0.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:38:22.051166 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-0.meta
+I0904 19:38:22.051309 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-0.meta
+INFO:tensorflow:15300
+I0904 19:38:22.051601 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-0.index
+I0904 19:38:22.051709 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-0.index
+INFO:tensorflow:15300
+I0904 19:38:22.051826 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 0...
+I0904 19:38:22.052055 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 0...
+INFO:tensorflow:Accuracy = 0.02705512, Global Step = 0, Loss = 3.681301, Perplexity = 39.698013
+I0904 19:38:25.550224 139650650019712 basic_session_run_hooks.py:266] Accuracy = 0.02705512, Global Step = 0, Loss = 3.681301, Perplexity = 39.698013
+INFO:tensorflow:Accuracy = 0.5748836, Global Step = 10, Loss = 2.054421, Perplexity = 7.802319 (14.673 sec)
+I0904 19:38:40.223269 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.5748836, Global Step = 10, Loss = 2.054421, Perplexity = 7.802319 (14.673 sec)
+INFO:tensorflow:global_step/sec: 0.681515
+I0904 19:38:40.224255 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.681515
+INFO:tensorflow:Accuracy = 0.6322966, Global Step = 20, Loss = 1.8116206, Perplexity = 6.120358 (14.242 sec)
+I0904 19:38:54.465404 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6322966, Global Step = 20, Loss = 1.8116206, Perplexity = 6.120358 (14.242 sec)
+INFO:tensorflow:global_step/sec: 0.702142
+I0904 19:38:54.466372 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.702142
+INFO:tensorflow:Accuracy = 0.55175525, Global Step = 30, Loss = 2.0573058, Perplexity = 7.82486 (14.448 sec)
+I0904 19:39:08.913214 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.55175525, Global Step = 30, Loss = 2.0573058, Perplexity = 7.82486 (14.448 sec)
+INFO:tensorflow:global_step/sec: 0.692151
+I0904 19:39:08.914097 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.692151
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 41...
+I0904 19:39:23.475946 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 41...
+INFO:tensorflow:Saving checkpoints for 41 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:39:23.476228 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 41 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-41.index
+I0904 19:39:23.589903 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-41.index
+INFO:tensorflow:0
+I0904 19:39:23.590115 139650650019712 saver.py:93] 0
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-41.meta
+I0904 19:39:23.590214 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-41.meta
+INFO:tensorflow:600
+I0904 19:39:23.590304 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-41.data-00000-of-00001
+I0904 19:39:23.590372 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-41.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:39:23.590450 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 41...
+I0904 19:39:23.590639 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 41...
+INFO:tensorflow:Accuracy = 0.60974264, Global Step = 40, Loss = 1.8295727, Perplexity = 6.2312236 (14.678 sec)
+I0904 19:39:23.590851 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.60974264, Global Step = 40, Loss = 1.8295727, Perplexity = 6.2312236 (14.678 sec)
+INFO:tensorflow:global_step/sec: 0.6813
+I0904 19:39:23.591996 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.6813
+INFO:tensorflow:Accuracy = 0.5835459, Global Step = 50, Loss = 1.8808771, Perplexity = 6.5592556 (14.376 sec)
+I0904 19:39:37.966500 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.5835459, Global Step = 50, Loss = 1.8808771, Perplexity = 6.5592556 (14.376 sec)
+INFO:tensorflow:global_step/sec: 0.695623
+I0904 19:39:37.967535 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.695623
+INFO:tensorflow:Accuracy = 0.6217647, Global Step = 60, Loss = 1.659785, Perplexity = 5.25818 (14.259 sec)
+I0904 19:39:52.225990 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6217647, Global Step = 60, Loss = 1.659785, Perplexity = 5.25818 (14.259 sec)
+INFO:tensorflow:global_step/sec: 0.701283
+I0904 19:39:52.227123 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.701283
+INFO:tensorflow:Accuracy = 0.6331595, Global Step = 70, Loss = 1.6114309, Perplexity = 5.009975 (14.584 sec)
+I0904 19:40:06.809709 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6331595, Global Step = 70, Loss = 1.6114309, Perplexity = 5.009975 (14.584 sec)
+INFO:tensorflow:global_step/sec: 0.685705
+I0904 19:40:06.810669 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.685705
+INFO:tensorflow:Accuracy = 0.55815595, Global Step = 80, Loss = 1.8307009, Perplexity = 6.2382574 (14.400 sec)
+I0904 19:40:21.210175 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.55815595, Global Step = 80, Loss = 1.8307009, Perplexity = 6.2382574 (14.400 sec)
+INFO:tensorflow:global_step/sec: 0.694409
+I0904 19:40:21.211443 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.694409
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 83...
+I0904 19:40:24.101820 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 83...
+INFO:tensorflow:Saving checkpoints for 83 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:40:24.102142 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 83 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-83.meta
+I0904 19:40:24.216400 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-83.meta
+INFO:tensorflow:600
+I0904 19:40:24.216609 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-83.data-00000-of-00001
+I0904 19:40:24.216713 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-83.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:40:24.216834 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-83.index
+I0904 19:40:24.216942 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-83.index
+INFO:tensorflow:15300
+I0904 19:40:24.217075 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 83...
+I0904 19:40:24.217331 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 83...
+INFO:tensorflow:Accuracy = 0.6498198, Global Step = 90, Loss = 1.5208875, Perplexity = 4.576285 (14.101 sec)
+I0904 19:40:35.311014 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6498198, Global Step = 90, Loss = 1.5208875, Perplexity = 4.576285 (14.101 sec)
+INFO:tensorflow:global_step/sec: 0.709179
+I0904 19:40:35.312245 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.709179
+INFO:tensorflow:global_step/sec: 0.694881
+I0904 19:40:49.459143 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.694881
+INFO:tensorflow:Accuracy = 0.59677875, Global Step = 100, Loss = 1.667181, Perplexity = 5.297214 (14.149 sec)
+I0904 19:40:49.460183 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.59677875, Global Step = 100, Loss = 1.667181, Perplexity = 5.297214 (14.149 sec)
+INFO:tensorflow:global_step/sec: 0.706775
+I0904 19:40:49.460983 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.706775
+INFO:tensorflow:Accuracy = 0.6300297, Global Step = 110, Loss = 1.547474, Perplexity = 4.699584 (14.558 sec)
+I0904 19:41:04.018301 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6300297, Global Step = 110, Loss = 1.547474, Perplexity = 4.699584 (14.558 sec)
+INFO:tensorflow:global_step/sec: 0.686901
+I0904 19:41:04.019197 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.686901
+INFO:tensorflow:Accuracy = 0.61066806, Global Step = 120, Loss = 1.5954719, Perplexity = 4.930655 (14.747 sec)
+I0904 19:41:18.764876 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.61066806, Global Step = 120, Loss = 1.5954719, Perplexity = 4.930655 (14.747 sec)
+INFO:tensorflow:global_step/sec: 0.678118
+I0904 19:41:18.765855 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.678118
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 125...
+I0904 19:41:24.372475 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 125...
+INFO:tensorflow:Saving checkpoints for 125 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:41:24.372686 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 125 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-125.index
+I0904 19:41:24.492234 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-125.index
+INFO:tensorflow:0
+I0904 19:41:24.492499 139650650019712 saver.py:93] 0
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-125.data-00000-of-00001
+I0904 19:41:24.492585 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-125.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:41:24.492709 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-125.meta
+I0904 19:41:24.492826 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-125.meta
+INFO:tensorflow:15300
+I0904 19:41:24.492941 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 125...
+I0904 19:41:24.493157 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 125...
+INFO:tensorflow:Accuracy = 0.59204584, Global Step = 130, Loss = 1.6301947, Perplexity = 5.1048684 (14.423 sec)
+I0904 19:41:33.187546 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.59204584, Global Step = 130, Loss = 1.6301947, Perplexity = 5.1048684 (14.423 sec)
+INFO:tensorflow:global_step/sec: 0.693353
+I0904 19:41:33.188507 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.693353
+INFO:tensorflow:Accuracy = 0.59400374, Global Step = 140, Loss = 1.6185724, Perplexity = 5.0458813 (14.830 sec)
+I0904 19:41:48.017726 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.59400374, Global Step = 140, Loss = 1.6185724, Perplexity = 5.0458813 (14.830 sec)
+INFO:tensorflow:global_step/sec: 0.674299
+I0904 19:41:48.018731 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.674299
+INFO:tensorflow:Accuracy = 0.6428038, Global Step = 150, Loss = 1.4586389, Perplexity = 4.3001027 (14.704 sec)
+I0904 19:42:02.722152 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6428038, Global Step = 150, Loss = 1.4586389, Perplexity = 4.3001027 (14.704 sec)
+INFO:tensorflow:global_step/sec: 0.680061
+I0904 19:42:02.723336 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.680061
+INFO:tensorflow:Accuracy = 0.60850674, Global Step = 160, Loss = 1.5303655, Perplexity = 4.619865 (14.449 sec)
+I0904 19:42:17.170645 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.60850674, Global Step = 160, Loss = 1.5303655, Perplexity = 4.619865 (14.449 sec)
+INFO:tensorflow:global_step/sec: 0.692115
+I0904 19:42:17.171814 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.692115
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 167...
+I0904 19:42:25.797157 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 167...
+INFO:tensorflow:Saving checkpoints for 167 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:42:25.797433 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 167 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-167.meta
+I0904 19:42:25.907302 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-167.meta
+INFO:tensorflow:600
+I0904 19:42:25.907538 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-167.data-00000-of-00001
+I0904 19:42:25.907643 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-167.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:42:25.907718 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-167.index
+I0904 19:42:25.907830 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-167.index
+INFO:tensorflow:15300
+I0904 19:42:25.907925 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 167...
+I0904 19:42:25.908099 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 167...
+INFO:tensorflow:Accuracy = 0.6571671, Global Step = 170, Loss = 1.4012005, Perplexity = 4.060071 (14.599 sec)
+I0904 19:42:31.769882 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6571671, Global Step = 170, Loss = 1.4012005, Perplexity = 4.060071 (14.599 sec)
+INFO:tensorflow:global_step/sec: 0.684976
+I0904 19:42:31.770810 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.684976
+INFO:tensorflow:Accuracy = 0.68260944, Global Step = 180, Loss = 1.311895, Perplexity = 3.7132037 (14.397 sec)
+I0904 19:42:46.167286 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.68260944, Global Step = 180, Loss = 1.311895, Perplexity = 3.7132037 (14.397 sec)
+INFO:tensorflow:global_step/sec: 0.69456
+I0904 19:42:46.168492 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.69456
+INFO:tensorflow:Accuracy = 0.6441929, Global Step = 190, Loss = 1.4213837, Perplexity = 4.142849 (14.366 sec)
+I0904 19:43:00.533021 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6441929, Global Step = 190, Loss = 1.4213837, Perplexity = 4.142849 (14.366 sec)
+INFO:tensorflow:global_step/sec: 0.696119
+I0904 19:43:00.533844 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.696119
+INFO:tensorflow:global_step/sec: 0.686644
+I0904 19:43:15.095032 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.686644
+INFO:tensorflow:Accuracy = 0.65572834, Global Step = 200, Loss = 1.2946641, Perplexity = 3.64977 (14.563 sec)
+I0904 19:43:15.095994 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.65572834, Global Step = 200, Loss = 1.2946641, Perplexity = 3.64977 (14.563 sec)
+INFO:tensorflow:global_step/sec: 0.68667
+I0904 19:43:15.096803 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.68667
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 209...
+I0904 19:43:26.456487 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 209...
+INFO:tensorflow:Saving checkpoints for 209 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:43:26.456692 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 209 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-209.index
+I0904 19:43:26.573307 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-209.index
+INFO:tensorflow:0
+I0904 19:43:26.573503 139650650019712 saver.py:93] 0
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-209.data-00000-of-00001
+I0904 19:43:26.573595 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-209.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:43:26.573683 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-209.meta
+I0904 19:43:26.573825 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-209.meta
+INFO:tensorflow:15300
+I0904 19:43:26.573958 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 209...
+I0904 19:43:26.574244 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 209...
+INFO:tensorflow:Accuracy = 0.6930413, Global Step = 210, Loss = 1.1723588, Perplexity = 3.2296014 (14.225 sec)
+I0904 19:43:29.321473 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6930413, Global Step = 210, Loss = 1.1723588, Perplexity = 3.2296014 (14.225 sec)
+INFO:tensorflow:global_step/sec: 0.702949
+I0904 19:43:29.322611 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.702949
+INFO:tensorflow:Accuracy = 0.69232416, Global Step = 220, Loss = 1.1899896, Perplexity = 3.287047 (14.273 sec)
+I0904 19:43:43.594342 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.69232416, Global Step = 220, Loss = 1.1899896, Perplexity = 3.287047 (14.273 sec)
+INFO:tensorflow:global_step/sec: 0.70064
+I0904 19:43:43.595283 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.70064
+INFO:tensorflow:Accuracy = 0.6598545, Global Step = 230, Loss = 1.2107592, Perplexity = 3.3560314 (14.535 sec)
+I0904 19:43:58.129427 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6598545, Global Step = 230, Loss = 1.2107592, Perplexity = 3.3560314 (14.535 sec)
+INFO:tensorflow:global_step/sec: 0.687987
+I0904 19:43:58.130421 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.687987
+INFO:tensorflow:Accuracy = 0.70973617, Global Step = 240, Loss = 1.0527334, Perplexity = 2.865473 (13.791 sec)
+I0904 19:44:11.920424 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.70973617, Global Step = 240, Loss = 1.0527334, Perplexity = 2.865473 (13.791 sec)
+INFO:tensorflow:global_step/sec: 0.725111
+I0904 19:44:11.921418 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.725111
+INFO:tensorflow:Accuracy = 0.68705875, Global Step = 250, Loss = 1.0881654, Perplexity = 2.9688225 (14.501 sec)
+I0904 19:44:26.421622 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.68705875, Global Step = 250, Loss = 1.0881654, Perplexity = 2.9688225 (14.501 sec)
+INFO:tensorflow:global_step/sec: 0.689595
+I0904 19:44:26.422714 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.689595
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 252...
+I0904 19:44:27.994611 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 252...
+INFO:tensorflow:Saving checkpoints for 252 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:44:27.994870 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 252 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-252.data-00000-of-00001
+I0904 19:44:28.105838 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-252.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:44:28.106086 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-252.meta
+I0904 19:44:28.106194 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-252.meta
+INFO:tensorflow:15300
+I0904 19:44:28.106300 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-252.index
+I0904 19:44:28.106396 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-252.index
+INFO:tensorflow:15300
+I0904 19:44:28.106515 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 252...
+I0904 19:44:28.106694 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 252...
+INFO:tensorflow:Accuracy = 0.7365447, Global Step = 260, Loss = 0.9405462, Perplexity = 2.5613801 (14.694 sec)
+I0904 19:44:41.115753 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7365447, Global Step = 260, Loss = 0.9405462, Perplexity = 2.5613801 (14.694 sec)
+INFO:tensorflow:global_step/sec: 0.680548
+I0904 19:44:41.116732 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.680548
+INFO:tensorflow:Accuracy = 0.71646464, Global Step = 270, Loss = 0.9832942, Perplexity = 2.673248 (14.554 sec)
+I0904 19:44:55.669232 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.71646464, Global Step = 270, Loss = 0.9832942, Perplexity = 2.673248 (14.554 sec)
+INFO:tensorflow:global_step/sec: 0.687115
+I0904 19:44:55.670319 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.687115
+INFO:tensorflow:Accuracy = 0.73293734, Global Step = 280, Loss = 0.9460471, Perplexity = 2.5755088 (14.789 sec)
+I0904 19:45:10.458414 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.73293734, Global Step = 280, Loss = 0.9460471, Perplexity = 2.5755088 (14.789 sec)
+INFO:tensorflow:global_step/sec: 0.676173
+I0904 19:45:10.459438 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.676173
+INFO:tensorflow:Accuracy = 0.73161143, Global Step = 290, Loss = 0.95588946, Perplexity = 2.600983 (14.545 sec)
+I0904 19:45:25.003089 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.73161143, Global Step = 290, Loss = 0.95588946, Perplexity = 2.600983 (14.545 sec)
+INFO:tensorflow:global_step/sec: 0.687535
+I0904 19:45:25.004201 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.687535
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 294...
+I0904 19:45:29.210223 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 294...
+INFO:tensorflow:Saving checkpoints for 294 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:45:29.210499 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 294 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-294.index
+I0904 19:45:29.326735 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-294.index
+INFO:tensorflow:0
+I0904 19:45:29.327036 139650650019712 saver.py:93] 0
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-294.meta
+I0904 19:45:29.327148 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-294.meta
+INFO:tensorflow:600
+I0904 19:45:29.327237 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-294.data-00000-of-00001
+I0904 19:45:29.327300 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-294.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:45:29.327364 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 294...
+I0904 19:45:29.327553 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 294...
+INFO:tensorflow:global_step/sec: 0.694011
+I0904 19:45:39.185068 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.694011
+INFO:tensorflow:Accuracy = 0.689995, Global Step = 300, Loss = 1.0160061, Perplexity = 2.762141 (14.183 sec)
+I0904 19:45:39.186108 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.689995, Global Step = 300, Loss = 1.0160061, Perplexity = 2.762141 (14.183 sec)
+INFO:tensorflow:global_step/sec: 0.70509
+I0904 19:45:39.186708 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.70509
+INFO:tensorflow:Accuracy = 0.7061472, Global Step = 310, Loss = 0.954738, Perplexity = 2.5979898 (14.256 sec)
+I0904 19:45:53.442247 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7061472, Global Step = 310, Loss = 0.954738, Perplexity = 2.5979898 (14.256 sec)
+INFO:tensorflow:global_step/sec: 0.701423
+I0904 19:45:53.443475 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.701423
+INFO:tensorflow:Accuracy = 0.70929784, Global Step = 320, Loss = 0.9215293, Perplexity = 2.5131307 (14.222 sec)
+I0904 19:46:07.664675 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.70929784, Global Step = 320, Loss = 0.9215293, Perplexity = 2.5131307 (14.222 sec)
+INFO:tensorflow:global_step/sec: 0.703133
+I0904 19:46:07.665522 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.703133
+INFO:tensorflow:Accuracy = 0.72745687, Global Step = 330, Loss = 0.8566069, Perplexity = 2.3551557 (14.414 sec)
+I0904 19:46:22.078700 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.72745687, Global Step = 330, Loss = 0.8566069, Perplexity = 2.3551557 (14.414 sec)
+INFO:tensorflow:global_step/sec: 0.693762
+I0904 19:46:22.079715 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.693762
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 336...
+I0904 19:46:29.486321 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 336...
+INFO:tensorflow:Saving checkpoints for 336 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:46:29.486589 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 336 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-336.data-00000-of-00001
+I0904 19:46:29.599606 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-336.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:46:29.599802 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-336.meta
+I0904 19:46:29.599881 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-336.meta
+INFO:tensorflow:15300
+I0904 19:46:29.599980 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-336.index
+I0904 19:46:29.600049 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-336.index
+INFO:tensorflow:15300
+I0904 19:46:29.600119 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 336...
+I0904 19:46:29.600299 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 336...
+INFO:tensorflow:Accuracy = 0.7573855, Global Step = 340, Loss = 0.75936204, Perplexity = 2.1369123 (14.448 sec)
+I0904 19:46:36.526241 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7573855, Global Step = 340, Loss = 0.75936204, Perplexity = 2.1369123 (14.448 sec)
+INFO:tensorflow:global_step/sec: 0.692165
+I0904 19:46:36.527159 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.692165
+INFO:tensorflow:Accuracy = 0.70735633, Global Step = 350, Loss = 0.872089, Perplexity = 2.3919024 (14.755 sec)
+I0904 19:46:51.280871 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.70735633, Global Step = 350, Loss = 0.872089, Perplexity = 2.3919024 (14.755 sec)
+INFO:tensorflow:global_step/sec: 0.677747
+I0904 19:46:51.281901 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.677747
+INFO:tensorflow:Accuracy = 0.7488195, Global Step = 360, Loss = 0.76930314, Perplexity = 2.1582618 (14.192 sec)
+I0904 19:47:05.473105 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7488195, Global Step = 360, Loss = 0.76930314, Perplexity = 2.1582618 (14.192 sec)
+INFO:tensorflow:global_step/sec: 0.704614
+I0904 19:47:05.474071 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.704614
+INFO:tensorflow:Accuracy = 0.7221098, Global Step = 370, Loss = 0.8147217, Perplexity = 2.258547 (14.585 sec)
+I0904 19:47:20.057905 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7221098, Global Step = 370, Loss = 0.8147217, Perplexity = 2.258547 (14.585 sec)
+INFO:tensorflow:global_step/sec: 0.685643
+I0904 19:47:20.058951 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.685643
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 378...
+I0904 19:47:30.123886 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 378...
+INFO:tensorflow:Saving checkpoints for 378 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:47:30.124145 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 378 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-378.data-00000-of-00001
+I0904 19:47:30.235780 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-378.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:47:30.236009 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-378.meta
+I0904 19:47:30.236093 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-378.meta
+INFO:tensorflow:15300
+I0904 19:47:30.236171 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-378.index
+I0904 19:47:30.236240 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-378.index
+INFO:tensorflow:15300
+I0904 19:47:30.236308 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 378...
+I0904 19:47:30.236479 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 378...
+INFO:tensorflow:Accuracy = 0.75881135, Global Step = 380, Loss = 0.7185114, Perplexity = 2.051377 (14.457 sec)
+I0904 19:47:34.515340 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.75881135, Global Step = 380, Loss = 0.7185114, Perplexity = 2.051377 (14.457 sec)
+INFO:tensorflow:global_step/sec: 0.691688
+I0904 19:47:34.516277 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.691688
+INFO:tensorflow:Accuracy = 0.73619545, Global Step = 390, Loss = 0.7567646, Perplexity = 2.131369 (14.475 sec)
+I0904 19:47:48.990523 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.73619545, Global Step = 390, Loss = 0.7567646, Perplexity = 2.131369 (14.475 sec)
+INFO:tensorflow:global_step/sec: 0.690832
+I0904 19:47:48.991578 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.690832
+INFO:tensorflow:global_step/sec: 0.692319
+I0904 19:48:03.627032 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.692319
+INFO:tensorflow:Accuracy = 0.7710364, Global Step = 400, Loss = 0.65096337, Perplexity = 1.9173871 (14.638 sec)
+I0904 19:48:03.628113 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7710364, Global Step = 400, Loss = 0.65096337, Perplexity = 1.9173871 (14.638 sec)
+INFO:tensorflow:global_step/sec: 0.683184
+I0904 19:48:03.628957 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.683184
+INFO:tensorflow:Accuracy = 0.73615265, Global Step = 410, Loss = 0.7439962, Perplexity = 2.1043282 (14.659 sec)
+I0904 19:48:18.287147 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.73615265, Global Step = 410, Loss = 0.7439962, Perplexity = 2.1043282 (14.659 sec)
+INFO:tensorflow:global_step/sec: 0.682146
+I0904 19:48:18.288629 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.682146
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 420...
+I0904 19:48:31.604492 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 420...
+INFO:tensorflow:Saving checkpoints for 420 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:48:31.604875 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 420 into /content/checkpoints_v2/train/model.ckpt.
+WARNING:tensorflow:From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/saver.py:1068: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W0904 19:48:31.624809 139650650019712 deprecation.py:356] From /usr/local/lib/python3.7/dist-packages/tensorflow/python/training/saver.py:1068: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-420.meta
+I0904 19:48:31.719800 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-420.meta
+INFO:tensorflow:600
+I0904 19:48:31.719923 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-420.index
+I0904 19:48:31.719997 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-420.index
+INFO:tensorflow:600
+I0904 19:48:31.720112 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-420.data-00000-of-00001
+I0904 19:48:31.720180 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-420.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:48:31.720249 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 420...
+I0904 19:48:31.720441 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 420...
+INFO:tensorflow:Accuracy = 0.75516576, Global Step = 420, Loss = 0.6929936, Perplexity = 1.9996929 (14.956 sec)
+I0904 19:48:33.242966 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.75516576, Global Step = 420, Loss = 0.6929936, Perplexity = 1.9996929 (14.956 sec)
+INFO:tensorflow:global_step/sec: 0.668661
+I0904 19:48:33.243826 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.668661
+INFO:tensorflow:Accuracy = 0.7694799, Global Step = 430, Loss = 0.6444994, Perplexity = 1.9050332 (14.930 sec)
+I0904 19:48:48.172583 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7694799, Global Step = 430, Loss = 0.6444994, Perplexity = 1.9050332 (14.930 sec)
+INFO:tensorflow:global_step/sec: 0.6698
+I0904 19:48:48.173656 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.6698
+INFO:tensorflow:Accuracy = 0.7709692, Global Step = 440, Loss = 0.63389874, Perplexity = 1.8849453 (14.923 sec)
+I0904 19:49:03.095240 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7709692, Global Step = 440, Loss = 0.63389874, Perplexity = 1.8849453 (14.923 sec)
+INFO:tensorflow:global_step/sec: 0.67013
+I0904 19:49:03.096136 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.67013
+INFO:tensorflow:Accuracy = 0.7711038, Global Step = 450, Loss = 0.62708855, Perplexity = 1.872152 (14.167 sec)
+I0904 19:49:17.262195 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7711038, Global Step = 450, Loss = 0.62708855, Perplexity = 1.872152 (14.167 sec)
+INFO:tensorflow:global_step/sec: 0.705861
+I0904 19:49:17.263245 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.705861
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 461...
+I0904 19:49:31.823834 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 461...
+INFO:tensorflow:Saving checkpoints for 461 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:49:31.824085 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 461 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-461.data-00000-of-00001
+I0904 19:49:31.938502 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-461.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:49:31.938687 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-461.index
+I0904 19:49:31.938807 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-461.index
+INFO:tensorflow:14700
+I0904 19:49:31.938887 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-461.meta
+I0904 19:49:31.938959 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-461.meta
+INFO:tensorflow:15300
+I0904 19:49:31.939031 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 461...
+I0904 19:49:31.939202 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 461...
+INFO:tensorflow:Accuracy = 0.7877195, Global Step = 460, Loss = 0.57506806, Perplexity = 1.7772515 (14.677 sec)
+I0904 19:49:31.939608 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7877195, Global Step = 460, Loss = 0.57506806, Perplexity = 1.7772515 (14.677 sec)
+INFO:tensorflow:global_step/sec: 0.681319
+I0904 19:49:31.940659 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.681319
+INFO:tensorflow:Accuracy = 0.75460047, Global Step = 470, Loss = 0.64979625, Perplexity = 1.9151506 (14.758 sec)
+I0904 19:49:46.698078 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.75460047, Global Step = 470, Loss = 0.64979625, Perplexity = 1.9151506 (14.758 sec)
+INFO:tensorflow:global_step/sec: 0.677571
+I0904 19:49:46.699242 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.677571
+INFO:tensorflow:Accuracy = 0.80273724, Global Step = 480, Loss = 0.53649163, Perplexity = 1.7099969 (14.317 sec)
+I0904 19:50:01.015102 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.80273724, Global Step = 480, Loss = 0.53649163, Perplexity = 1.7099969 (14.317 sec)
+INFO:tensorflow:global_step/sec: 0.698475
+I0904 19:50:01.016132 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.698475
+INFO:tensorflow:Accuracy = 0.7828396, Global Step = 490, Loss = 0.57162106, Perplexity = 1.7711358 (14.985 sec)
+I0904 19:50:15.999954 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7828396, Global Step = 490, Loss = 0.57162106, Perplexity = 1.7711358 (14.985 sec)
+INFO:tensorflow:global_step/sec: 0.667343
+I0904 19:50:16.000960 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.667343
+INFO:tensorflow:global_step/sec: 0.681875
+I0904 19:50:30.281457 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.681875
+INFO:tensorflow:Accuracy = 0.7972929, Global Step = 500, Loss = 0.538185, Perplexity = 1.7128952 (14.283 sec)
+I0904 19:50:30.282575 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7972929, Global Step = 500, Loss = 0.538185, Perplexity = 1.7128952 (14.283 sec)
+INFO:tensorflow:global_step/sec: 0.70016
+I0904 19:50:30.283366 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.70016
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 503...
+I0904 19:50:33.015621 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 503...
+INFO:tensorflow:Saving checkpoints for 503 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:50:33.015883 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 503 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-503.meta
+I0904 19:50:33.129063 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-503.meta
+INFO:tensorflow:600
+I0904 19:50:33.129285 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-503.data-00000-of-00001
+I0904 19:50:33.129361 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-503.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:50:33.129439 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-503.index
+I0904 19:50:33.129503 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-503.index
+INFO:tensorflow:15300
+I0904 19:50:33.129584 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 503...
+I0904 19:50:33.129738 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 503...
+INFO:tensorflow:Accuracy = 0.82714826, Global Step = 510, Loss = 0.46233314, Perplexity = 1.5877742 (14.521 sec)
+I0904 19:50:44.803417 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.82714826, Global Step = 510, Loss = 0.46233314, Perplexity = 1.5877742 (14.521 sec)
+INFO:tensorflow:global_step/sec: 0.688654
+I0904 19:50:44.804473 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.688654
+INFO:tensorflow:Accuracy = 0.7954396, Global Step = 520, Loss = 0.53361845, Perplexity = 1.705091 (14.365 sec)
+I0904 19:50:59.167954 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7954396, Global Step = 520, Loss = 0.53361845, Perplexity = 1.705091 (14.365 sec)
+INFO:tensorflow:global_step/sec: 0.696169
+I0904 19:50:59.168819 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.696169
+INFO:tensorflow:Accuracy = 0.7823956, Global Step = 530, Loss = 0.5670734, Perplexity = 1.7630996 (14.363 sec)
+I0904 19:51:13.531153 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7823956, Global Step = 530, Loss = 0.5670734, Perplexity = 1.7630996 (14.363 sec)
+INFO:tensorflow:global_step/sec: 0.696218
+I0904 19:51:13.532099 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.696218
+INFO:tensorflow:Accuracy = 0.8084424, Global Step = 540, Loss = 0.4992419, Perplexity = 1.6474718 (14.373 sec)
+I0904 19:51:27.904404 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8084424, Global Step = 540, Loss = 0.4992419, Perplexity = 1.6474718 (14.373 sec)
+INFO:tensorflow:global_step/sec: 0.695731
+I0904 19:51:27.905519 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.695731
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 545...
+I0904 19:51:33.595818 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 545...
+INFO:tensorflow:Saving checkpoints for 545 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:51:33.596130 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 545 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-545.data-00000-of-00001
+I0904 19:51:33.713520 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-545.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:51:33.713736 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-545.meta
+I0904 19:51:33.713882 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-545.meta
+INFO:tensorflow:15300
+I0904 19:51:33.714001 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-545.index
+I0904 19:51:33.714101 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-545.index
+INFO:tensorflow:15300
+I0904 19:51:33.714201 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 545...
+I0904 19:51:33.714382 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 545...
+INFO:tensorflow:Accuracy = 0.80803174, Global Step = 550, Loss = 0.499197, Perplexity = 1.6473979 (14.575 sec)
+I0904 19:51:42.479372 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.80803174, Global Step = 550, Loss = 0.499197, Perplexity = 1.6473979 (14.575 sec)
+INFO:tensorflow:global_step/sec: 0.686112
+I0904 19:51:42.480357 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.686112
+INFO:tensorflow:Accuracy = 0.80296516, Global Step = 560, Loss = 0.5193734, Perplexity = 1.680974 (14.270 sec)
+I0904 19:51:56.749105 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.80296516, Global Step = 560, Loss = 0.5193734, Perplexity = 1.680974 (14.270 sec)
+INFO:tensorflow:global_step/sec: 0.700785
+I0904 19:51:56.750054 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.700785
+INFO:tensorflow:Accuracy = 0.83167404, Global Step = 570, Loss = 0.445452, Perplexity = 1.5611956 (14.571 sec)
+I0904 19:52:11.319802 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.83167404, Global Step = 570, Loss = 0.445452, Perplexity = 1.5611956 (14.571 sec)
+INFO:tensorflow:global_step/sec: 0.686318
+I0904 19:52:11.320567 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.686318
+INFO:tensorflow:Accuracy = 0.8226894, Global Step = 580, Loss = 0.4675864, Perplexity = 1.596137 (14.393 sec)
+I0904 19:52:25.712607 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8226894, Global Step = 580, Loss = 0.4675864, Perplexity = 1.596137 (14.393 sec)
+INFO:tensorflow:global_step/sec: 0.694778
+I0904 19:52:25.713673 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.694778
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 587...
+I0904 19:52:34.542769 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 587...
+INFO:tensorflow:Saving checkpoints for 587 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:52:34.543059 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 587 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-587.data-00000-of-00001
+I0904 19:52:34.664312 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-587.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:52:34.664508 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-587.index
+I0904 19:52:34.664631 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-587.index
+INFO:tensorflow:14700
+I0904 19:52:34.664723 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-587.meta
+I0904 19:52:34.664894 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-587.meta
+INFO:tensorflow:15300
+I0904 19:52:34.664984 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 587...
+I0904 19:52:34.665195 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 587...
+INFO:tensorflow:Accuracy = 0.80985266, Global Step = 590, Loss = 0.48884207, Perplexity = 1.6304272 (14.639 sec)
+I0904 19:52:40.351134 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.80985266, Global Step = 590, Loss = 0.48884207, Perplexity = 1.6304272 (14.639 sec)
+INFO:tensorflow:global_step/sec: 0.68314
+I0904 19:52:40.351976 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.68314
+INFO:tensorflow:global_step/sec: 0.691772
+I0904 19:52:54.837715 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.691772
+INFO:tensorflow:Accuracy = 0.8327088, Global Step = 600, Loss = 0.43863478, Perplexity = 1.5505888 (14.488 sec)
+I0904 19:52:54.838717 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8327088, Global Step = 600, Loss = 0.43863478, Perplexity = 1.5505888 (14.488 sec)
+INFO:tensorflow:global_step/sec: 0.690244
+I0904 19:52:54.839588 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.690244
+INFO:tensorflow:Accuracy = 0.8251542, Global Step = 610, Loss = 0.44934338, Perplexity = 1.5672828 (14.598 sec)
+I0904 19:53:09.436715 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8251542, Global Step = 610, Loss = 0.44934338, Perplexity = 1.5672828 (14.598 sec)
+INFO:tensorflow:global_step/sec: 0.685019
+I0904 19:53:09.437802 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.685019
+INFO:tensorflow:Accuracy = 0.8665633, Global Step = 620, Loss = 0.36542767, Perplexity = 1.4411303 (15.183 sec)
+I0904 19:53:24.620210 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8665633, Global Step = 620, Loss = 0.36542767, Perplexity = 1.4411303 (15.183 sec)
+INFO:tensorflow:global_step/sec: 0.658613
+I0904 19:53:24.621167 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.658613
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 628...
+I0904 19:53:34.942115 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 628...
+INFO:tensorflow:Saving checkpoints for 628 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:53:34.942347 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 628 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-628.data-00000-of-00001
+I0904 19:53:35.062104 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-628.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:53:35.062475 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-628.index
+I0904 19:53:35.062605 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-628.index
+INFO:tensorflow:14700
+I0904 19:53:35.062714 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-628.meta
+I0904 19:53:35.062805 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-628.meta
+INFO:tensorflow:15300
+I0904 19:53:35.062877 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 628...
+I0904 19:53:35.063049 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 628...
+INFO:tensorflow:Accuracy = 0.84418, Global Step = 630, Loss = 0.41494635, Perplexity = 1.5142895 (14.739 sec)
+I0904 19:53:39.359728 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.84418, Global Step = 630, Loss = 0.41494635, Perplexity = 1.5142895 (14.739 sec)
+INFO:tensorflow:global_step/sec: 0.678439
+I0904 19:53:39.360939 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.678439
+INFO:tensorflow:Accuracy = 0.85718423, Global Step = 640, Loss = 0.38027778, Perplexity = 1.4626908 (14.717 sec)
+I0904 19:53:54.076703 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.85718423, Global Step = 640, Loss = 0.38027778, Perplexity = 1.4626908 (14.717 sec)
+INFO:tensorflow:global_step/sec: 0.679493
+I0904 19:53:54.077775 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.679493
+INFO:tensorflow:Accuracy = 0.86799216, Global Step = 650, Loss = 0.36298218, Perplexity = 1.4376104 (14.521 sec)
+I0904 19:54:08.597682 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.86799216, Global Step = 650, Loss = 0.36298218, Perplexity = 1.4376104 (14.521 sec)
+INFO:tensorflow:global_step/sec: 0.688658
+I0904 19:54:08.598735 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.688658
+INFO:tensorflow:Accuracy = 0.8840762, Global Step = 660, Loss = 0.31744185, Perplexity = 1.3736093 (14.233 sec)
+I0904 19:54:22.830602 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8840762, Global Step = 660, Loss = 0.31744185, Perplexity = 1.3736093 (14.233 sec)
+INFO:tensorflow:global_step/sec: 0.702598
+I0904 19:54:22.831625 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.702598
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 670...
+I0904 19:54:35.346871 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 670...
+INFO:tensorflow:Saving checkpoints for 670 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:54:35.347126 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 670 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-670.index
+I0904 19:54:35.464537 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-670.index
+INFO:tensorflow:0
+I0904 19:54:35.464757 139650650019712 saver.py:93] 0
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-670.data-00000-of-00001
+I0904 19:54:35.464874 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-670.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:54:35.464992 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-670.meta
+I0904 19:54:35.465095 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-670.meta
+INFO:tensorflow:15300
+I0904 19:54:35.465199 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 670...
+I0904 19:54:35.465387 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 670...
+INFO:tensorflow:Accuracy = 0.8622253, Global Step = 670, Loss = 0.38012472, Perplexity = 1.462467 (14.051 sec)
+I0904 19:54:36.881424 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8622253, Global Step = 670, Loss = 0.38012472, Perplexity = 1.462467 (14.051 sec)
+INFO:tensorflow:global_step/sec: 0.711706
+I0904 19:54:36.882350 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.711706
+INFO:tensorflow:Accuracy = 0.8660733, Global Step = 680, Loss = 0.36519, Perplexity = 1.4407878 (14.511 sec)
+I0904 19:54:51.392387 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8660733, Global Step = 680, Loss = 0.36519, Perplexity = 1.4407878 (14.511 sec)
+INFO:tensorflow:global_step/sec: 0.689133
+I0904 19:54:51.393373 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.689133
+INFO:tensorflow:Accuracy = 0.8719586, Global Step = 690, Loss = 0.3541692, Perplexity = 1.4249963 (14.180 sec)
+I0904 19:55:05.572135 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8719586, Global Step = 690, Loss = 0.3541692, Perplexity = 1.4249963 (14.180 sec)
+INFO:tensorflow:global_step/sec: 0.705232
+I0904 19:55:05.573077 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.705232
+INFO:tensorflow:global_step/sec: 0.689905
+I0904 19:55:19.785297 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.689905
+INFO:tensorflow:Accuracy = 0.8993428, Global Step = 700, Loss = 0.291048, Perplexity = 1.3378288 (14.214 sec)
+I0904 19:55:19.786293 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.8993428, Global Step = 700, Loss = 0.291048, Perplexity = 1.3378288 (14.214 sec)
+INFO:tensorflow:global_step/sec: 0.703533
+I0904 19:55:19.787035 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.703533
+INFO:tensorflow:Accuracy = 0.91240054, Global Step = 710, Loss = 0.25123838, Perplexity = 1.2856165 (14.429 sec)
+I0904 19:55:34.214945 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.91240054, Global Step = 710, Loss = 0.25123838, Perplexity = 1.2856165 (14.429 sec)
+INFO:tensorflow:global_step/sec: 0.693056
+I0904 19:55:34.215887 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.693056
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 712...
+I0904 19:55:35.694257 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 712...
+INFO:tensorflow:Saving checkpoints for 712 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:55:35.694512 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 712 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-712.meta
+I0904 19:55:35.808446 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-712.meta
+INFO:tensorflow:600
+I0904 19:55:35.808731 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-712.data-00000-of-00001
+I0904 19:55:35.808894 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-712.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:55:35.808991 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-712.index
+I0904 19:55:35.809103 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-712.index
+INFO:tensorflow:15300
+I0904 19:55:35.809186 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 712...
+I0904 19:55:35.809380 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 712...
+INFO:tensorflow:Accuracy = 0.9116447, Global Step = 720, Loss = 0.25275302, Perplexity = 1.2875652 (14.278 sec)
+I0904 19:55:48.492875 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9116447, Global Step = 720, Loss = 0.25275302, Perplexity = 1.2875652 (14.278 sec)
+INFO:tensorflow:global_step/sec: 0.700384
+I0904 19:55:48.493772 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.700384
+INFO:tensorflow:Accuracy = 0.92571294, Global Step = 730, Loss = 0.21514663, Perplexity = 1.2400438 (14.678 sec)
+I0904 19:56:03.171312 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.92571294, Global Step = 730, Loss = 0.21514663, Perplexity = 1.2400438 (14.678 sec)
+INFO:tensorflow:global_step/sec: 0.681269
+I0904 19:56:03.172248 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.681269
+INFO:tensorflow:Accuracy = 0.91760767, Global Step = 740, Loss = 0.2435598, Perplexity = 1.2757826 (14.479 sec)
+I0904 19:56:17.650713 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.91760767, Global Step = 740, Loss = 0.2435598, Perplexity = 1.2757826 (14.479 sec)
+INFO:tensorflow:global_step/sec: 0.69064
+I0904 19:56:17.651578 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.69064
+INFO:tensorflow:Accuracy = 0.92700446, Global Step = 750, Loss = 0.22003327, Perplexity = 1.2461182 (14.443 sec)
+I0904 19:56:32.093488 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.92700446, Global Step = 750, Loss = 0.22003327, Perplexity = 1.2461182 (14.443 sec)
+INFO:tensorflow:global_step/sec: 0.69238
+I0904 19:56:32.094516 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.69238
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 754...
+I0904 19:56:36.672166 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 754...
+INFO:tensorflow:Saving checkpoints for 754 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:56:36.672430 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 754 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-754.meta
+I0904 19:56:36.795143 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-754.meta
+INFO:tensorflow:600
+I0904 19:56:36.795397 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-754.index
+I0904 19:56:36.795476 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-754.index
+INFO:tensorflow:600
+I0904 19:56:36.795552 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-754.data-00000-of-00001
+I0904 19:56:36.795619 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-754.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:56:36.795688 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 754...
+I0904 19:56:36.795873 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 754...
+INFO:tensorflow:Accuracy = 0.9365901, Global Step = 760, Loss = 0.1966287, Perplexity = 1.217292 (15.045 sec)
+I0904 19:56:47.138305 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9365901, Global Step = 760, Loss = 0.1966287, Perplexity = 1.217292 (15.045 sec)
+INFO:tensorflow:global_step/sec: 0.664683
+I0904 19:56:47.139357 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.664683
+INFO:tensorflow:Accuracy = 0.93037003, Global Step = 770, Loss = 0.20230792, Perplexity = 1.2242249 (14.791 sec)
+I0904 19:57:01.929372 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.93037003, Global Step = 770, Loss = 0.20230792, Perplexity = 1.2242249 (14.791 sec)
+INFO:tensorflow:global_step/sec: 0.676088
+I0904 19:57:01.930295 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.676088
+INFO:tensorflow:Accuracy = 0.93524724, Global Step = 780, Loss = 0.19876789, Perplexity = 1.2198988 (14.353 sec)
+I0904 19:57:16.282824 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.93524724, Global Step = 780, Loss = 0.19876789, Perplexity = 1.2198988 (14.353 sec)
+INFO:tensorflow:global_step/sec: 0.696698
+I0904 19:57:16.283724 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.696698
+INFO:tensorflow:Accuracy = 0.9427434, Global Step = 790, Loss = 0.17503452, Perplexity = 1.1912874 (14.995 sec)
+I0904 19:57:31.277387 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9427434, Global Step = 790, Loss = 0.17503452, Perplexity = 1.1912874 (14.995 sec)
+INFO:tensorflow:global_step/sec: 0.666907
+I0904 19:57:31.278299 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.666907
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 795...
+I0904 19:57:37.052387 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 795...
+INFO:tensorflow:Saving checkpoints for 795 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:57:37.052735 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 795 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-795.data-00000-of-00001
+I0904 19:57:37.170967 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-795.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:57:37.171163 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-795.index
+I0904 19:57:37.171255 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-795.index
+INFO:tensorflow:14700
+I0904 19:57:37.171330 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-795.meta
+I0904 19:57:37.171398 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-795.meta
+INFO:tensorflow:15300
+I0904 19:57:37.171465 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 795...
+I0904 19:57:37.171611 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 795...
+INFO:tensorflow:global_step/sec: 0.684346
+I0904 19:57:45.910249 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.684346
+INFO:tensorflow:Accuracy = 0.9477375, Global Step = 800, Loss = 0.16113284, Perplexity = 1.174841 (14.634 sec)
+I0904 19:57:45.911392 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9477375, Global Step = 800, Loss = 0.16113284, Perplexity = 1.174841 (14.634 sec)
+INFO:tensorflow:global_step/sec: 0.683348
+I0904 19:57:45.912119 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.683348
+INFO:tensorflow:Accuracy = 0.9528414, Global Step = 810, Loss = 0.14633997, Perplexity = 1.1575898 (14.599 sec)
+I0904 19:58:00.510584 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9528414, Global Step = 810, Loss = 0.14633997, Perplexity = 1.1575898 (14.599 sec)
+INFO:tensorflow:global_step/sec: 0.684961
+I0904 19:58:00.511512 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.684961
+INFO:tensorflow:Accuracy = 0.95335376, Global Step = 820, Loss = 0.1452693, Perplexity = 1.156351 (14.327 sec)
+I0904 19:58:14.837501 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.95335376, Global Step = 820, Loss = 0.1452693, Perplexity = 1.156351 (14.327 sec)
+INFO:tensorflow:global_step/sec: 0.697987
+I0904 19:58:14.838427 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.697987
+INFO:tensorflow:Accuracy = 0.95917624, Global Step = 830, Loss = 0.12948363, Perplexity = 1.1382405 (14.140 sec)
+I0904 19:58:28.977221 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.95917624, Global Step = 830, Loss = 0.12948363, Perplexity = 1.1382405 (14.140 sec)
+INFO:tensorflow:global_step/sec: 0.707223
+I0904 19:58:28.978243 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.707223
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 837...
+I0904 19:58:37.764893 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 837...
+INFO:tensorflow:Saving checkpoints for 837 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:58:37.765178 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 837 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-837.index
+I0904 19:58:37.894151 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-837.index
+INFO:tensorflow:0
+I0904 19:58:37.894371 139650650019712 saver.py:93] 0
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-837.meta
+I0904 19:58:37.894470 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-837.meta
+INFO:tensorflow:600
+I0904 19:58:37.894589 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-837.data-00000-of-00001
+I0904 19:58:37.894668 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-837.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 19:58:37.894775 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 837...
+I0904 19:58:37.894966 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 837...
+INFO:tensorflow:Accuracy = 0.9517583, Global Step = 840, Loss = 0.1500879, Perplexity = 1.1619364 (14.739 sec)
+I0904 19:58:43.716006 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9517583, Global Step = 840, Loss = 0.1500879, Perplexity = 1.1619364 (14.739 sec)
+INFO:tensorflow:global_step/sec: 0.678481
+I0904 19:58:43.717040 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.678481
+INFO:tensorflow:Accuracy = 0.9607685, Global Step = 850, Loss = 0.12279147, Perplexity = 1.1306486 (14.575 sec)
+I0904 19:58:58.291396 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9607685, Global Step = 850, Loss = 0.12279147, Perplexity = 1.1306486 (14.575 sec)
+INFO:tensorflow:global_step/sec: 0.686092
+I0904 19:58:58.292369 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.686092
+INFO:tensorflow:Accuracy = 0.9587119, Global Step = 860, Loss = 0.13082966, Perplexity = 1.1397736 (14.361 sec)
+I0904 19:59:12.652575 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9587119, Global Step = 860, Loss = 0.13082966, Perplexity = 1.1397736 (14.361 sec)
+INFO:tensorflow:global_step/sec: 0.69632
+I0904 19:59:12.653581 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.69632
+INFO:tensorflow:Accuracy = 0.95844275, Global Step = 870, Loss = 0.13244429, Perplexity = 1.1416154 (14.656 sec)
+I0904 19:59:27.308402 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.95844275, Global Step = 870, Loss = 0.13244429, Perplexity = 1.1416154 (14.656 sec)
+INFO:tensorflow:global_step/sec: 0.682325
+I0904 19:59:27.309332 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.682325
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 879...
+I0904 19:59:38.922804 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 879...
+INFO:tensorflow:Saving checkpoints for 879 into /content/checkpoints_v2/train/model.ckpt.
+I0904 19:59:38.923140 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 879 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-879.data-00000-of-00001
+I0904 19:59:39.039262 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-879.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 19:59:39.039540 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-879.index
+I0904 19:59:39.039628 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-879.index
+INFO:tensorflow:14700
+I0904 19:59:39.039714 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-879.meta
+I0904 19:59:39.039808 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-879.meta
+INFO:tensorflow:15300
+I0904 19:59:39.039891 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 879...
+I0904 19:59:39.040095 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 879...
+INFO:tensorflow:Accuracy = 0.96529555, Global Step = 880, Loss = 0.11237065, Perplexity = 1.1189275 (14.629 sec)
+I0904 19:59:41.937394 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.96529555, Global Step = 880, Loss = 0.11237065, Perplexity = 1.1189275 (14.629 sec)
+INFO:tensorflow:global_step/sec: 0.683573
+I0904 19:59:41.938337 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.683573
+INFO:tensorflow:Accuracy = 0.9709278, Global Step = 890, Loss = 0.10021794, Perplexity = 1.1054118 (14.591 sec)
+I0904 19:59:56.528420 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9709278, Global Step = 890, Loss = 0.10021794, Perplexity = 1.1054118 (14.591 sec)
+INFO:tensorflow:global_step/sec: 0.685347
+I0904 19:59:56.529531 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.685347
+INFO:tensorflow:global_step/sec: 0.690148
+I0904 20:00:10.806856 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.690148
+INFO:tensorflow:Accuracy = 0.9706222, Global Step = 900, Loss = 0.09487575, Perplexity = 1.0995222 (14.280 sec)
+I0904 20:00:10.808022 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9706222, Global Step = 900, Loss = 0.09487575, Perplexity = 1.0995222 (14.280 sec)
+INFO:tensorflow:global_step/sec: 0.700311
+I0904 20:00:10.808855 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.700311
+INFO:tensorflow:Accuracy = 0.9709615, Global Step = 910, Loss = 0.098491386, Perplexity = 1.1035049 (13.945 sec)
+I0904 20:00:24.753409 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9709615, Global Step = 910, Loss = 0.098491386, Perplexity = 1.1035049 (13.945 sec)
+INFO:tensorflow:global_step/sec: 0.717069
+I0904 20:00:24.754550 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.717069
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 921...
+I0904 20:00:39.669332 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 921...
+INFO:tensorflow:Saving checkpoints for 921 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:00:39.669642 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 921 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-921.data-00000-of-00001
+I0904 20:00:39.784744 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-921.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 20:00:39.785083 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-921.index
+I0904 20:00:39.785165 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-921.index
+INFO:tensorflow:14700
+I0904 20:00:39.785256 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-921.meta
+I0904 20:00:39.785334 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-921.meta
+INFO:tensorflow:15300
+I0904 20:00:39.785413 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 921...
+I0904 20:00:39.785576 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 921...
+INFO:tensorflow:Accuracy = 0.9670522, Global Step = 920, Loss = 0.111488685, Perplexity = 1.117941 (15.033 sec)
+I0904 20:00:39.785908 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9670522, Global Step = 920, Loss = 0.111488685, Perplexity = 1.117941 (15.033 sec)
+INFO:tensorflow:global_step/sec: 0.665231
+I0904 20:00:39.786884 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.665231
+INFO:tensorflow:Accuracy = 0.96893257, Global Step = 930, Loss = 0.10246888, Perplexity = 1.1079029 (14.500 sec)
+I0904 20:00:54.285611 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.96893257, Global Step = 930, Loss = 0.10246888, Perplexity = 1.1079029 (14.500 sec)
+INFO:tensorflow:global_step/sec: 0.68967
+I0904 20:00:54.286561 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.68967
+INFO:tensorflow:Accuracy = 0.97216487, Global Step = 940, Loss = 0.0939999, Perplexity = 1.0985596 (14.328 sec)
+I0904 20:01:08.613359 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.97216487, Global Step = 940, Loss = 0.0939999, Perplexity = 1.0985596 (14.328 sec)
+INFO:tensorflow:global_step/sec: 0.697938
+I0904 20:01:08.614516 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.697938
+INFO:tensorflow:Accuracy = 0.9730307, Global Step = 950, Loss = 0.09105288, Perplexity = 1.0953269 (14.366 sec)
+I0904 20:01:22.979360 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9730307, Global Step = 950, Loss = 0.09105288, Perplexity = 1.0953269 (14.366 sec)
+INFO:tensorflow:global_step/sec: 0.696092
+I0904 20:01:22.980416 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.696092
+INFO:tensorflow:Accuracy = 0.9759998, Global Step = 960, Loss = 0.08330805, Perplexity = 1.0868765 (14.613 sec)
+I0904 20:01:37.592648 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9759998, Global Step = 960, Loss = 0.08330805, Perplexity = 1.0868765 (14.613 sec)
+INFO:tensorflow:global_step/sec: 0.684316
+I0904 20:01:37.593543 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.684316
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 963...
+I0904 20:01:40.354058 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 963...
+INFO:tensorflow:Saving checkpoints for 963 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:01:40.354351 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 963 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-963.meta
+I0904 20:01:40.468722 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-963.meta
+INFO:tensorflow:600
+I0904 20:01:40.468948 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-963.index
+I0904 20:01:40.469031 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-963.index
+INFO:tensorflow:600
+I0904 20:01:40.469122 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-963.data-00000-of-00001
+I0904 20:01:40.469191 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-963.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 20:01:40.469261 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 963...
+I0904 20:01:40.469418 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 963...
+INFO:tensorflow:Accuracy = 0.9770269, Global Step = 970, Loss = 0.075984314, Perplexity = 1.0789456 (14.416 sec)
+I0904 20:01:52.008447 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9770269, Global Step = 970, Loss = 0.075984314, Perplexity = 1.0789456 (14.416 sec)
+INFO:tensorflow:global_step/sec: 0.693685
+I0904 20:01:52.009324 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.693685
+INFO:tensorflow:Accuracy = 0.980202, Global Step = 980, Loss = 0.071047604, Perplexity = 1.0736324 (14.156 sec)
+I0904 20:02:06.164829 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.980202, Global Step = 980, Loss = 0.071047604, Perplexity = 1.0736324 (14.156 sec)
+INFO:tensorflow:global_step/sec: 0.706391
+I0904 20:02:06.165841 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.706391
+INFO:tensorflow:Accuracy = 0.97408754, Global Step = 990, Loss = 0.086695105, Perplexity = 1.0905641 (14.165 sec)
+I0904 20:02:20.330097 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.97408754, Global Step = 990, Loss = 0.086695105, Perplexity = 1.0905641 (14.165 sec)
+INFO:tensorflow:global_step/sec: 0.705934
+I0904 20:02:20.331518 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.705934
+INFO:tensorflow:global_step/sec: 0.69507
+I0904 20:02:34.677191 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.69507
+INFO:tensorflow:Accuracy = 0.97952753, Global Step = 1000, Loss = 0.071704395, Perplexity = 1.0743377 (14.348 sec)
+I0904 20:02:34.678177 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.97952753, Global Step = 1000, Loss = 0.071704395, Perplexity = 1.0743377 (14.348 sec)
+INFO:tensorflow:global_step/sec: 0.696986
+I0904 20:02:34.678896 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.696986
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1005...
+I0904 20:02:40.551251 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1005...
+INFO:tensorflow:Saving checkpoints for 1005 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:02:40.551537 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1005 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1005.index
+I0904 20:02:40.665303 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1005.index
+INFO:tensorflow:0
+I0904 20:02:40.665518 139650650019712 saver.py:93] 0
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1005.meta
+I0904 20:02:40.665600 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1005.meta
+INFO:tensorflow:600
+I0904 20:02:40.665721 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1005.data-00000-of-00001
+I0904 20:02:40.665809 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1005.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 20:02:40.665884 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1005...
+I0904 20:02:40.666076 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1005...
+INFO:tensorflow:Accuracy = 0.9792349, Global Step = 1010, Loss = 0.06990843, Perplexity = 1.07241 (14.569 sec)
+I0904 20:02:49.246895 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9792349, Global Step = 1010, Loss = 0.06990843, Perplexity = 1.07241 (14.569 sec)
+INFO:tensorflow:global_step/sec: 0.686386
+I0904 20:02:49.248006 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.686386
+INFO:tensorflow:Accuracy = 0.98128164, Global Step = 1020, Loss = 0.06605442, Perplexity = 1.0682849 (14.318 sec)
+I0904 20:03:03.565150 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98128164, Global Step = 1020, Loss = 0.06605442, Perplexity = 1.0682849 (14.318 sec)
+INFO:tensorflow:global_step/sec: 0.698421
+I0904 20:03:03.565991 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.698421
+INFO:tensorflow:Accuracy = 0.9826491, Global Step = 1030, Loss = 0.059182666, Perplexity = 1.060969 (14.494 sec)
+I0904 20:03:18.059398 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9826491, Global Step = 1030, Loss = 0.059182666, Perplexity = 1.060969 (14.494 sec)
+INFO:tensorflow:global_step/sec: 0.689916
+I0904 20:03:18.060517 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.689916
+INFO:tensorflow:Accuracy = 0.97954506, Global Step = 1040, Loss = 0.07174875, Perplexity = 1.0743853 (14.396 sec)
+I0904 20:03:32.454908 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.97954506, Global Step = 1040, Loss = 0.07174875, Perplexity = 1.0743853 (14.396 sec)
+INFO:tensorflow:global_step/sec: 0.694669
+I0904 20:03:32.455873 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.694669
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1047...
+I0904 20:03:41.062240 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1047...
+INFO:tensorflow:Saving checkpoints for 1047 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:03:41.062461 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1047 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1047.meta
+I0904 20:03:41.176631 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1047.meta
+INFO:tensorflow:600
+I0904 20:03:41.176868 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1047.data-00000-of-00001
+I0904 20:03:41.176960 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1047.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 20:03:41.177037 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1047.index
+I0904 20:03:41.177122 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1047.index
+INFO:tensorflow:15300
+I0904 20:03:41.177188 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1047...
+I0904 20:03:41.177328 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1047...
+INFO:tensorflow:Accuracy = 0.98438835, Global Step = 1050, Loss = 0.054215934, Perplexity = 1.0557126 (14.424 sec)
+I0904 20:03:46.878453 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98438835, Global Step = 1050, Loss = 0.054215934, Perplexity = 1.0557126 (14.424 sec)
+INFO:tensorflow:global_step/sec: 0.69331
+I0904 20:03:46.879463 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.69331
+INFO:tensorflow:Accuracy = 0.985865, Global Step = 1060, Loss = 0.052743316, Perplexity = 1.054159 (14.492 sec)
+I0904 20:04:01.370070 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.985865, Global Step = 1060, Loss = 0.052743316, Perplexity = 1.054159 (14.492 sec)
+INFO:tensorflow:global_step/sec: 0.690059
+I0904 20:04:01.370978 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.690059
+INFO:tensorflow:Accuracy = 0.9824307, Global Step = 1070, Loss = 0.06106485, Perplexity = 1.0629679 (14.123 sec)
+I0904 20:04:15.493327 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9824307, Global Step = 1070, Loss = 0.06106485, Perplexity = 1.0629679 (14.123 sec)
+INFO:tensorflow:global_step/sec: 0.70805
+I0904 20:04:15.494248 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.70805
+INFO:tensorflow:Accuracy = 0.9848379, Global Step = 1080, Loss = 0.053879585, Perplexity = 1.0553576 (14.699 sec)
+I0904 20:04:30.192147 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9848379, Global Step = 1080, Loss = 0.053879585, Perplexity = 1.0553576 (14.699 sec)
+INFO:tensorflow:global_step/sec: 0.680327
+I0904 20:04:30.193072 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.680327
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1089...
+I0904 20:04:41.723755 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1089...
+INFO:tensorflow:Saving checkpoints for 1089 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:04:41.724050 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1089 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1089.meta
+I0904 20:04:41.844832 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1089.meta
+INFO:tensorflow:600
+I0904 20:04:41.845142 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1089.index
+I0904 20:04:41.845248 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1089.index
+INFO:tensorflow:600
+I0904 20:04:41.845335 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1089.data-00000-of-00001
+I0904 20:04:41.845414 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1089.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 20:04:41.845496 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1089...
+I0904 20:04:41.845717 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1089...
+INFO:tensorflow:Accuracy = 0.9844798, Global Step = 1090, Loss = 0.05468329, Perplexity = 1.0562061 (14.528 sec)
+I0904 20:04:44.720172 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9844798, Global Step = 1090, Loss = 0.05468329, Perplexity = 1.0562061 (14.528 sec)
+INFO:tensorflow:global_step/sec: 0.688326
+I0904 20:04:44.721072 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.688326
+INFO:tensorflow:global_step/sec: 0.69284
+I0904 20:04:59.010701 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.69284
+INFO:tensorflow:Accuracy = 0.98595935, Global Step = 1100, Loss = 0.04962642, Perplexity = 1.0508785 (14.292 sec)
+I0904 20:04:59.011858 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98595935, Global Step = 1100, Loss = 0.04962642, Perplexity = 1.0508785 (14.292 sec)
+INFO:tensorflow:global_step/sec: 0.699712
+I0904 20:04:59.012703 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.699712
+INFO:tensorflow:Accuracy = 0.9866735, Global Step = 1110, Loss = 0.047727853, Perplexity = 1.0488852 (14.176 sec)
+I0904 20:05:13.187492 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9866735, Global Step = 1110, Loss = 0.047727853, Perplexity = 1.0488852 (14.176 sec)
+INFO:tensorflow:global_step/sec: 0.705426
+I0904 20:05:13.188496 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.705426
+INFO:tensorflow:Accuracy = 0.98642844, Global Step = 1120, Loss = 0.048640713, Perplexity = 1.0498431 (13.966 sec)
+I0904 20:05:27.153052 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98642844, Global Step = 1120, Loss = 0.048640713, Perplexity = 1.0498431 (13.966 sec)
+INFO:tensorflow:global_step/sec: 0.716053
+I0904 20:05:27.153963 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.716053
+INFO:tensorflow:Accuracy = 0.9886104, Global Step = 1130, Loss = 0.042630967, Perplexity = 1.0435528 (14.269 sec)
+I0904 20:05:41.422255 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9886104, Global Step = 1130, Loss = 0.042630967, Perplexity = 1.0435528 (14.269 sec)
+INFO:tensorflow:global_step/sec: 0.70081
+I0904 20:05:41.423170 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.70081
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1132...
+I0904 20:05:42.879510 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1132...
+INFO:tensorflow:Saving checkpoints for 1132 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:05:42.879815 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1132 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1132.data-00000-of-00001
+I0904 20:05:42.992761 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1132.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 20:05:42.992980 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1132.index
+I0904 20:05:42.993064 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1132.index
+INFO:tensorflow:14700
+I0904 20:05:42.993140 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1132.meta
+I0904 20:05:42.993212 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1132.meta
+INFO:tensorflow:15300
+I0904 20:05:42.993297 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1132...
+I0904 20:05:42.993458 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1132...
+INFO:tensorflow:Accuracy = 0.98834527, Global Step = 1140, Loss = 0.04322909, Perplexity = 1.044177 (14.342 sec)
+I0904 20:05:55.763780 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98834527, Global Step = 1140, Loss = 0.04322909, Perplexity = 1.044177 (14.342 sec)
+INFO:tensorflow:global_step/sec: 0.697283
+I0904 20:05:55.764549 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.697283
+INFO:tensorflow:Accuracy = 0.9882339, Global Step = 1150, Loss = 0.044657394, Perplexity = 1.0456696 (14.507 sec)
+I0904 20:06:10.270489 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9882339, Global Step = 1150, Loss = 0.044657394, Perplexity = 1.0456696 (14.507 sec)
+INFO:tensorflow:global_step/sec: 0.689335
+I0904 20:06:10.271271 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.689335
+INFO:tensorflow:Accuracy = 0.98832977, Global Step = 1160, Loss = 0.045110323, Perplexity = 1.0461433 (14.524 sec)
+I0904 20:06:24.794569 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98832977, Global Step = 1160, Loss = 0.045110323, Perplexity = 1.0461433 (14.524 sec)
+INFO:tensorflow:global_step/sec: 0.688495
+I0904 20:06:24.795716 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.688495
+INFO:tensorflow:Accuracy = 0.9861726, Global Step = 1170, Loss = 0.05115646, Perplexity = 1.0524875 (14.523 sec)
+I0904 20:06:39.317564 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9861726, Global Step = 1170, Loss = 0.05115646, Perplexity = 1.0524875 (14.523 sec)
+INFO:tensorflow:global_step/sec: 0.688574
+I0904 20:06:39.318470 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.688574
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1174...
+I0904 20:06:43.733808 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1174...
+INFO:tensorflow:Saving checkpoints for 1174 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:06:43.734082 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1174 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1174.meta
+I0904 20:06:43.845861 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1174.meta
+INFO:tensorflow:600
+I0904 20:06:43.846078 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1174.index
+I0904 20:06:43.846173 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1174.index
+INFO:tensorflow:600
+I0904 20:06:43.846246 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1174.data-00000-of-00001
+I0904 20:06:43.846340 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1174.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 20:06:43.846406 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1174...
+I0904 20:06:43.846564 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1174...
+INFO:tensorflow:Accuracy = 0.98845476, Global Step = 1180, Loss = 0.04176595, Perplexity = 1.0426505 (14.374 sec)
+I0904 20:06:53.691227 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98845476, Global Step = 1180, Loss = 0.04176595, Perplexity = 1.0426505 (14.374 sec)
+INFO:tensorflow:global_step/sec: 0.695712
+I0904 20:06:53.692221 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.695712
+INFO:tensorflow:Accuracy = 0.98921245, Global Step = 1190, Loss = 0.038810894, Perplexity = 1.0395739 (13.964 sec)
+I0904 20:07:07.655232 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98921245, Global Step = 1190, Loss = 0.038810894, Perplexity = 1.0395739 (13.964 sec)
+INFO:tensorflow:global_step/sec: 0.716117
+I0904 20:07:07.656474 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.716117
+INFO:tensorflow:global_step/sec: 0.700734
+I0904 20:07:21.718219 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.700734
+INFO:tensorflow:Accuracy = 0.98903745, Global Step = 1200, Loss = 0.040140793, Perplexity = 1.0409573 (14.064 sec)
+I0904 20:07:21.719331 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.98903745, Global Step = 1200, Loss = 0.040140793, Perplexity = 1.0409573 (14.064 sec)
+INFO:tensorflow:global_step/sec: 0.711047
+I0904 20:07:21.720195 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.711047
+INFO:tensorflow:Accuracy = 0.9904623, Global Step = 1210, Loss = 0.035298858, Perplexity = 1.0359292 (14.402 sec)
+I0904 20:07:36.121081 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9904623, Global Step = 1210, Loss = 0.035298858, Perplexity = 1.0359292 (14.402 sec)
+INFO:tensorflow:global_step/sec: 0.694355
+I0904 20:07:36.122047 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.694355
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1217...
+I0904 20:07:44.571295 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1217...
+INFO:tensorflow:Saving checkpoints for 1217 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:07:44.571566 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1217 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1217.data-00000-of-00001
+I0904 20:07:44.682608 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1217.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 20:07:44.682863 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1217.meta
+I0904 20:07:44.682996 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1217.meta
+INFO:tensorflow:15300
+I0904 20:07:44.683143 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1217.index
+I0904 20:07:44.683256 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1217.index
+INFO:tensorflow:15300
+I0904 20:07:44.683354 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1217...
+I0904 20:07:44.683539 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1217...
+INFO:tensorflow:Accuracy = 0.9876414, Global Step = 1220, Loss = 0.04330251, Perplexity = 1.0442537 (14.053 sec)
+I0904 20:07:50.173805 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9876414, Global Step = 1220, Loss = 0.04330251, Perplexity = 1.0442537 (14.053 sec)
+INFO:tensorflow:global_step/sec: 0.711613
+I0904 20:07:50.174625 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.711613
+INFO:tensorflow:Accuracy = 0.9902005, Global Step = 1230, Loss = 0.036279872, Perplexity = 1.036946 (14.351 sec)
+I0904 20:08:04.524713 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9902005, Global Step = 1230, Loss = 0.036279872, Perplexity = 1.036946 (14.351 sec)
+INFO:tensorflow:global_step/sec: 0.696807
+I0904 20:08:04.525834 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.696807
+INFO:tensorflow:Accuracy = 0.99075204, Global Step = 1240, Loss = 0.032529283, Perplexity = 1.0330641 (14.481 sec)
+I0904 20:08:19.005296 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.99075204, Global Step = 1240, Loss = 0.032529283, Perplexity = 1.0330641 (14.481 sec)
+INFO:tensorflow:global_step/sec: 0.690582
+I0904 20:08:19.006356 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.690582
+INFO:tensorflow:Accuracy = 0.9895311, Global Step = 1250, Loss = 0.03837431, Perplexity = 1.0391201 (14.397 sec)
+I0904 20:08:33.402414 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9895311, Global Step = 1250, Loss = 0.03837431, Perplexity = 1.0391201 (14.397 sec)
+INFO:tensorflow:global_step/sec: 0.694591
+I0904 20:08:33.403302 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.694591
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1259...
+I0904 20:08:45.009379 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1259...
+INFO:tensorflow:Saving checkpoints for 1259 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:08:45.009650 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1259 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1259.meta
+I0904 20:08:45.125094 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1259.meta
+INFO:tensorflow:600
+I0904 20:08:45.125347 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1259.data-00000-of-00001
+I0904 20:08:45.125431 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1259.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 20:08:45.125523 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1259.index
+I0904 20:08:45.125589 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1259.index
+INFO:tensorflow:15300
+I0904 20:08:45.125685 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1259...
+I0904 20:08:45.125856 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1259...
+INFO:tensorflow:Accuracy = 0.9901532, Global Step = 1260, Loss = 0.037196167, Perplexity = 1.0378966 (14.609 sec)
+I0904 20:08:48.011018 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9901532, Global Step = 1260, Loss = 0.037196167, Perplexity = 1.0378966 (14.609 sec)
+INFO:tensorflow:global_step/sec: 0.684529
+I0904 20:08:48.011898 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.684529
+INFO:tensorflow:Accuracy = 0.99007577, Global Step = 1270, Loss = 0.033541672, Perplexity = 1.0341105 (14.372 sec)
+I0904 20:09:02.382552 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.99007577, Global Step = 1270, Loss = 0.033541672, Perplexity = 1.0341105 (14.372 sec)
+INFO:tensorflow:global_step/sec: 0.695817
+I0904 20:09:02.383506 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.695817
+INFO:tensorflow:Accuracy = 0.99143404, Global Step = 1280, Loss = 0.032911148, Perplexity = 1.0334587 (14.605 sec)
+I0904 20:09:16.987893 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.99143404, Global Step = 1280, Loss = 0.032911148, Perplexity = 1.0334587 (14.605 sec)
+INFO:tensorflow:global_step/sec: 0.684675
+I0904 20:09:16.988962 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.684675
+INFO:tensorflow:Accuracy = 0.9910221, Global Step = 1290, Loss = 0.033459656, Perplexity = 1.0340257 (14.527 sec)
+I0904 20:09:31.515105 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9910221, Global Step = 1290, Loss = 0.033459656, Perplexity = 1.0340257 (14.527 sec)
+INFO:tensorflow:global_step/sec: 0.688373
+I0904 20:09:31.515978 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.688373
+INFO:tensorflow:global_step/sec: 0.693829
+I0904 20:09:45.845953 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.693829
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1301...
+I0904 20:09:45.847576 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1301...
+INFO:tensorflow:Saving checkpoints for 1301 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:09:45.847699 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1301 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1301.data-00000-of-00001
+I0904 20:09:45.969838 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1301.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 20:09:45.970039 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1301.meta
+I0904 20:09:45.970129 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1301.meta
+INFO:tensorflow:15300
+I0904 20:09:45.970216 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1301.index
+I0904 20:09:45.970294 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1301.index
+INFO:tensorflow:15300
+I0904 20:09:45.970374 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1301...
+I0904 20:09:45.970562 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1301...
+INFO:tensorflow:Accuracy = 0.9913677, Global Step = 1300, Loss = 0.03216237, Perplexity = 1.0326852 (14.456 sec)
+I0904 20:09:45.970776 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9913677, Global Step = 1300, Loss = 0.03216237, Perplexity = 1.0326852 (14.456 sec)
+INFO:tensorflow:global_step/sec: 0.691758
+I0904 20:09:45.971930 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.691758
+INFO:tensorflow:Accuracy = 0.991988, Global Step = 1310, Loss = 0.029467897, Perplexity = 1.0299064 (14.463 sec)
+I0904 20:10:00.434234 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.991988, Global Step = 1310, Loss = 0.029467897, Perplexity = 1.0299064 (14.463 sec)
+INFO:tensorflow:global_step/sec: 0.691405
+I0904 20:10:00.435204 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.691405
+INFO:tensorflow:Accuracy = 0.9927113, Global Step = 1320, Loss = 0.028309328, Perplexity = 1.0287138 (14.507 sec)
+I0904 20:10:14.941511 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9927113, Global Step = 1320, Loss = 0.028309328, Perplexity = 1.0287138 (14.507 sec)
+INFO:tensorflow:global_step/sec: 0.689306
+I0904 20:10:14.942565 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.689306
+INFO:tensorflow:Accuracy = 0.99219304, Global Step = 1330, Loss = 0.029759306, Perplexity = 1.0302066 (14.172 sec)
+I0904 20:10:29.113137 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.99219304, Global Step = 1330, Loss = 0.029759306, Perplexity = 1.0302066 (14.172 sec)
+INFO:tensorflow:global_step/sec: 0.70564
+I0904 20:10:29.114106 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.70564
+INFO:tensorflow:Accuracy = 0.9922372, Global Step = 1340, Loss = 0.028173972, Perplexity = 1.0285746 (14.889 sec)
+I0904 20:10:44.001844 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9922372, Global Step = 1340, Loss = 0.028173972, Perplexity = 1.0285746 (14.889 sec)
+INFO:tensorflow:global_step/sec: 0.671651
+I0904 20:10:44.002813 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.671651
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1343...
+I0904 20:10:46.893377 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1343...
+INFO:tensorflow:Saving checkpoints for 1343 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:10:46.893664 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1343 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1343.meta
+I0904 20:10:47.014698 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1343.meta
+INFO:tensorflow:600
+I0904 20:10:47.014925 139650650019712 saver.py:93] 600
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1343.data-00000-of-00001
+I0904 20:10:47.015038 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1343.data-00000-of-00001
+INFO:tensorflow:15300
+I0904 20:10:47.015118 139650650019712 saver.py:93] 15300
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1343.index
+I0904 20:10:47.015205 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1343.index
+INFO:tensorflow:15300
+I0904 20:10:47.015307 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1343...
+I0904 20:10:47.015477 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1343...
+INFO:tensorflow:Accuracy = 0.99112654, Global Step = 1350, Loss = 0.03277605, Perplexity = 1.0333191 (14.559 sec)
+I0904 20:10:58.560833 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.99112654, Global Step = 1350, Loss = 0.03277605, Perplexity = 1.0333191 (14.559 sec)
+INFO:tensorflow:global_step/sec: 0.686859
+I0904 20:10:58.561811 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.686859
+INFO:tensorflow:Accuracy = 0.99166715, Global Step = 1360, Loss = 0.028355515, Perplexity = 1.0287614 (14.233 sec)
+I0904 20:11:12.794123 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.99166715, Global Step = 1360, Loss = 0.028355515, Perplexity = 1.0287614 (14.233 sec)
+INFO:tensorflow:global_step/sec: 0.702576
+I0904 20:11:12.795139 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.702576
+INFO:tensorflow:Accuracy = 0.9938128, Global Step = 1370, Loss = 0.024008108, Perplexity = 1.0242987 (14.205 sec)
+I0904 20:11:26.999482 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9938128, Global Step = 1370, Loss = 0.024008108, Perplexity = 1.0242987 (14.205 sec)
+INFO:tensorflow:global_step/sec: 0.703958
+I0904 20:11:27.000520 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.703958
+INFO:tensorflow:Accuracy = 0.9905589, Global Step = 1380, Loss = 0.033228315, Perplexity = 1.0337865 (14.141 sec)
+I0904 20:11:41.140311 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.9905589, Global Step = 1380, Loss = 0.033228315, Perplexity = 1.0337865 (14.141 sec)
+INFO:tensorflow:global_step/sec: 0.707178
+I0904 20:11:41.141262 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.707178
+INFO:tensorflow:Calling checkpoint listeners before saving checkpoint 1386...
+I0904 20:11:48.121865 139650650019712 basic_session_run_hooks.py:629] Calling checkpoint listeners before saving checkpoint 1386...
+INFO:tensorflow:Saving checkpoints for 1386 into /content/checkpoints_v2/train/model.ckpt.
+I0904 20:11:48.122164 139650650019712 basic_session_run_hooks.py:633] Saving checkpoints for 1386 into /content/checkpoints_v2/train/model.ckpt.
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1386.data-00000-of-00001
+I0904 20:11:48.237214 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1386.data-00000-of-00001
+INFO:tensorflow:14700
+I0904 20:11:48.237421 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1386.index
+I0904 20:11:48.237539 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1386.index
+INFO:tensorflow:14700
+I0904 20:11:48.237658 139650650019712 saver.py:93] 14700
+INFO:tensorflow:/content/checkpoints_v2/train/model.ckpt-1386.meta
+I0904 20:11:48.237787 139650650019712 saver.py:90] /content/checkpoints_v2/train/model.ckpt-1386.meta
+INFO:tensorflow:15300
+I0904 20:11:48.237892 139650650019712 saver.py:93] 15300
+INFO:tensorflow:Calling checkpoint listeners after saving checkpoint 1386...
+I0904 20:11:48.238130 139650650019712 basic_session_run_hooks.py:641] Calling checkpoint listeners after saving checkpoint 1386...
+INFO:tensorflow:Accuracy = 0.6760313, Global Step = 1390, Loss = 1.6763982, Perplexity = 5.346265 (14.047 sec)
+I0904 20:11:55.187065 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.6760313, Global Step = 1390, Loss = 1.6763982, Perplexity = 5.346265 (14.047 sec)
+INFO:tensorflow:global_step/sec: 0.711901
+I0904 20:11:55.188163 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.711901
+INFO:tensorflow:global_step/sec: 0.695402
+I0904 20:12:09.647579 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.695402
+INFO:tensorflow:Accuracy = 0.64454395, Global Step = 1400, Loss = 1.3602219, Perplexity = 3.8970578 (14.462 sec)
+I0904 20:12:09.648584 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.64454395, Global Step = 1400, Loss = 1.3602219, Perplexity = 3.8970578 (14.462 sec)
+INFO:tensorflow:global_step/sec: 0.691506
+I0904 20:12:09.649322 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.691506
+INFO:tensorflow:Accuracy = 0.7405407, Global Step = 1410, Loss = 0.92940825, Perplexity = 2.5330098 (14.505 sec)
+I0904 20:12:24.153730 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7405407, Global Step = 1410, Loss = 0.92940825, Perplexity = 2.5330098 (14.505 sec)
+INFO:tensorflow:global_step/sec: 0.689403
+I0904 20:12:24.154619 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.689403
+INFO:tensorflow:Accuracy = 0.7816729, Global Step = 1420, Loss = 0.746586, Perplexity = 2.1097848 (13.980 sec)
+I0904 20:12:38.133434 139650650019712 basic_session_run_hooks.py:264] Accuracy = 0.7816729, Global Step = 1420, Loss = 0.746586, Perplexity = 2.1097848 (13.980 sec)
+INFO:tensorflow:global_step/sec: 0.715312
+I0904 20:12:38.134585 139650650019712 basic_session_run_hooks.py:717] global_step/sec: 0.715312
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/magenta/models/melody_rnn/melody_rnn_train.py", line 113, in <module>
+    console_entry_point()
+  File "/usr/local/lib/python3.7/dist-packages/magenta/models/melody_rnn/melody_rnn_train.py", line 109, in console_entry_point
+    tf.app.run(main)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/platform/app.py", line 36, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.7/dist-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.7/dist-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/usr/local/lib/python3.7/dist-packages/magenta/models/melody_rnn/melody_rnn_train.py", line 104, in main
+    checkpoints_to_keep=FLAGS.num_checkpoints)
+  File "/usr/local/lib/python3.7/dist-packages/magenta/models/shared/events_rnn_train.py", line 112, in run_training
+    is_chief=task == 0)
+  File "/usr/local/lib/python3.7/dist-packages/tf_slim/training/training.py", line 551, in train
+    loss = session.run(train_op, run_metadata=run_metadata)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/training/monitored_session.py", line 786, in run
+    run_metadata=run_metadata)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/training/monitored_session.py", line 1315, in run
+    run_metadata=run_metadata)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/training/monitored_session.py", line 1401, in run
+    return self._sess.run(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/training/monitored_session.py", line 1474, in run
+    run_metadata=run_metadata)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/training/monitored_session.py", line 1232, in run
+    return self._sess.run(*args, **kwargs)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 968, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 1191, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 1371, in _do_run
+    run_metadata)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 1377, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 1361, in _run_fn
+    target_list, run_metadata)
+  File "/usr/local/lib/python3.7/dist-packages/tensorflow/python/client/session.py", line 1455, in _call_tf_sessionrun
+    run_metadata)
+KeyboardInterrupt
