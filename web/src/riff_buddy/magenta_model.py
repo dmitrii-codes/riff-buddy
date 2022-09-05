@@ -21,7 +21,7 @@ def generate(midi, num_outputs=4):
 	output_dir = os.path.join(app.root_path, 'generated', uuid4().hex)
 	hparams = 'batch_size=128,rnn_layer_sizes=[256,256]'
 
-	os.system('python %s --config=%s --run_dir=%s --output_dir=%s --num_outputs=%d --num_steps=512--hparams=%s --primer_midi=%s' % (
+	os.system('python %s --config=%s --run_dir=%s --output_dir=%s --num_outputs=%d --num_steps=512 --hparams=%s --primer_midi=%s' % (
 		generate_script_path, config, run_dir, output_dir, num_outputs, hparams, primer_midi
 	))
 
