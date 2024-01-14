@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./views/home";
+import Home from "./views/Home";
 import About from "./views/About";
 import NotFound from "./views/NotFound";
 import "./index.css";
